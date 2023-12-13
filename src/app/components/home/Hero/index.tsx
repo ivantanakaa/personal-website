@@ -2,24 +2,25 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="p-12 flex h-screen flex-col justify-center">
+    <div className="md:p-12 p-8 flex h-screen flex-col justify-center">
       <h1 className="text-txt-light text-4xl mb-8">
         Hi, I&apos;m
         <br />
         <span className="text-6xl">Ivan Tanaka</span>
       </h1>
-      <p className="text-txt-light xl:w-1/3 mb-4">
+      <p className="text-txt-light xl:w-1/2 mb-4">
         A seasoned web engineer with five years of hands-on experience.
         Proficient in an array of cutting-edge technologies and frameworks,
         including React, Typescript, Laravel, Next.js, and Flutter, I bring a
         wealth of expertise to every project.
       </p>
-      <p className="text-txt-light xl:w-1/3">
+      <p className="text-txt-light xl:w-1/2">
         My passion lies in creating seamless and user-centric digital
         experiences. I am always eager to collaborate on exciting new ventures,
         so feel free to reach out and connect with me!
       </p>
-      <div className="flex gap-2 mt-4">
+      
+      <div className="flex gap-2 mt-4 w-fit pt-4 border-t-4 pr-4 ">
         <a
           href={"https://wa.link/nf8yeb"}
           target={"_blank"}
