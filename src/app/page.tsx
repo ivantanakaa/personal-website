@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Home() {
   return (
-    <div className="p-12">
+    <div className="p-12 flex h-screen flex-col justify-center">
       <h1 className="text-txt-light text-4xl mb-8">
         Hi, I&apos;m
         <br />
