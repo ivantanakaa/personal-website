@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="md:p-12 p-8 flex h-screen flex-col justify-center">
-      <h1 className="text-txt-light text-4xl mb-8">
+    <div className="md:p-12 p-8 flex flex-row justify-center gap-2">
+      <h1 className=" text-4xl mb-6 text-center">
         Hi, I&apos;m
-        <br />
-        <span className="text-6xl">Ivan Tanaka</span>
+        <div className="text-6xl mt-4">Ivan Tanaka</div>
+        <div className="mt-8"> A Web Engineer</div>
       </h1>
-      <p className="text-txt-light xl:w-1/2 mb-4">
+      {/* <p className="text-txt-light xl:w-1/2 mb-4">
         A seasoned web engineer with five years of hands-on experience.
         Proficient in an array of cutting-edge technologies and frameworks,
         including React, Typescript, Laravel, Next.js, and Flutter, I bring a
@@ -18,9 +18,9 @@ export default function Hero() {
         My passion lies in creating seamless and user-centric digital
         experiences. I am always eager to collaborate on exciting new ventures,
         so feel free to reach out and connect with me!
-      </p>
+      </p> */}
       
-      <div className="flex gap-2 mt-4 w-fit pt-4 border-t-4 pr-4 ">
+      <div className="flex gap-2 w-fit border-l-4 px-2 h-100 border-[#3d3d3d] flex-col justify-center">
         <a
           href={"https://wa.link/nf8yeb"}
           target={"_blank"}
@@ -46,7 +46,7 @@ export default function Hero() {
           />
         </a>
         <a
-          href={"https://github.com/IvanTanaka"}
+          href={"https://github.com/IvanTanakaa"}
           target={"_blank"}
           rel={"noreferrer noopener"}
         >

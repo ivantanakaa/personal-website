@@ -1,0 +1,56 @@
+[
+  {
+    "corporate": "Ayovest",
+    "position": "Web Developer Specialist",
+    "corporate_link": "https://www.ayovest.id/",
+    "start_date": "2023/12",
+    "end_date": null,
+    "jobs": [
+      "Develop mutual fund investment application and web using <b>Next.js</b> and <b>Vue.js.</b>",
+      "In charge for coordinating with vendor and stakeholder as an IT representative.",
+      "Refactoring legacy code using <b>Next.js.</b>"
+    ]
+  },
+  {
+    "corporate": "Bibit - Stockbit",
+    "position": "Web Engineer",
+    "corporate_link": "https://bibit.id/",
+    "start_date": "2022/05",
+    "end_date": "2023/10",
+    "jobs": [
+      "Develop mutual fund investment ecosystem application and web using <b>React.js.</b>",
+      "In charge for developing <i>Bibit Institution</i> an investment product for institutional clients.",
+      "In charge for developing a filter system for Top Product.",
+      "Develop a webpage for institutional product using <b>Next.js.</b>",
+      "Develop a stamp duty payment feature.",
+      "Daily bug fixing and analytics implementation to ensure software reliability."
+    ]
+  },
+  {
+    "corporate": "Topremit",
+    "position": "Front-End Developer",
+    "corporate_link": "https://topremit.com/en",
+    "start_date": "2021/01",
+    "end_date": "2022/03",
+    "jobs": [
+      "Develop remittance ecosystem for mobile and web using <b>React.js, React Native and Next.js.</b>",
+      "Develop webpage for company profile using <b>React.js.</b>",
+      "Develop <i>Topremit for Business</i>, a remittance service for corporate clients, using <b>Next.js.</b>",
+      "Develop OTP phone verification for sign in process.",
+      "Daily bug fixing to maintain software functionality."
+    ]
+  },
+  {
+    "corporate": "Bahaso",
+    "position": "Mobile Software Developer",
+    "corporate_link": "http://bit.ly/BahasoApps",
+    "start_date": "2019/06",
+    "end_date": "2020/01",
+    "jobs": [
+      "Using Scrum and Kanban (Scrumban).",
+      "Develop apps for languages e-learning using <b>Flutter</b> framework.",
+      "Apply MVVM and Provider for the state management.",
+      "Develop Arabic learning application using <b>Flutter.</b>"
+    ]
+  }
+]
