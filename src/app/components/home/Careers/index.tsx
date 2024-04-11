@@ -8,7 +8,7 @@ export default function Careers() {
         Careers
       </h1>
       <div className="flex flex-col">
-        {careers.map((career) => {
+        {careers.map((career, index) => {
           const startDate = new Date(career.start_date)
             .toLocaleDateString("en-GB", {
               month: "short",
@@ -24,7 +24,10 @@ export default function Careers() {
               })
               .replace(" ", ". ");
           return (
-            <div className="flex flex-col justify-start my-8">
+            <div
+              className="flex flex-col justify-start my-8"
+              key={`career-${index}`}
+            >
               <h2 className=" font-medium text-2xl mb-2 w-fit">
                 <Link
                   className="text-blue-500"
@@ -44,11 +47,11 @@ export default function Careers() {
                 </span>
               </div>
               <div className="mt-4 pl-1">
-                <ul className="list-disc list-inside">
+                <ul className="list-disc">
                   {career.jobs.map((job, index) => {
                     return (
                       <li
-                        key={index}
+                        key={`job-${index}`}
                         dangerouslySetInnerHTML={{ __html: job }}
                       />
                     );

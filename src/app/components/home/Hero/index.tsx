@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -19,10 +20,11 @@ export default function Hero() {
         experiences. I am always eager to collaborate on exciting new ventures,
         so feel free to reach out and connect with me!
       </p> */}
-      
+
       <div className="flex gap-2 w-fit border-l-4 px-2 h-100 border-[#3d3d3d] flex-col justify-center">
-        <a
+        <Link
           href={"https://wa.link/nf8yeb"}
+          className="flex flex-row items-center"
           target={"_blank"}
           rel={"noreferrer noopener"}
         >
@@ -32,9 +34,11 @@ export default function Hero() {
             width={35}
             height={35}
           />
-        </a>
-        <a
+          <div className="ml-2">+62 877-7925-7780</div>
+        </Link>
+        <Link
           href={"https://www.linkedin.com/in/ivantanakaa/"}
+          className="flex flex-row items-center"
           target={"_blank"}
           rel={"noreferrer noopener"}
         >
@@ -44,9 +48,11 @@ export default function Hero() {
             width={35}
             height={35}
           />
-        </a>
-        <a
-          href={"https://github.com/IvanTanakaa"}
+          <div className="ml-2">linkedin.com/in/ivantanakaa</div>
+        </Link>
+        <Link
+          href={"https://github.com/ivantanakaa"}
+          className="flex flex-row items-center"
           target={"_blank"}
           rel={"noreferrer noopener"}
         >
@@ -56,7 +62,8 @@ export default function Hero() {
             width={35}
             height={35}
           />
-        </a>
+          <div className="ml-2">@ivantanakaa</div>
+        </Link>
       </div>
     </div>
   );
