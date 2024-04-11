@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="md:p-12 p-8 flex flex-row justify-center gap-2">
-      <h1 className=" text-4xl mb-6 text-center">
+    <div className="md:p-12 p-8 flex flex-col md:flex-row justify-center gap-2 items-center">
+      <h1 className=" text-4xl mb-4 md:mb-6 text-center border-[#3d3d3d] md:border-r-4 md:pr-4">
         Hi, I&apos;m
         <div className="text-6xl mt-4">Ivan Tanaka</div>
-        <div className="mt-8"> A Web Engineer</div>
+        <div className="mt-4"> A Web Engineer</div>
       </h1>
       {/* <p className="text-txt-light xl:w-1/2 mb-4">
         A seasoned web engineer with five years of hands-on experience.
@@ -21,7 +21,7 @@ export default function Hero() {
         so feel free to reach out and connect with me!
       </p> */}
 
-      <div className="flex gap-2 w-fit border-l-4 px-2 h-100 border-[#3d3d3d] flex-col justify-center">
+      <div className="flex gap-2 w-fit border-t-4 pt-4 md:pt-0 md:border-t-0 px-2 h-100 border-[#3d3d3d] flex-col justify-center">
         <Link
           href={"https://wa.link/nf8yeb"}
           className="flex flex-row items-center"

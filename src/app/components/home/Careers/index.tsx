@@ -3,7 +3,7 @@ import careers from "./careers.json";
 
 export default function Careers() {
   return (
-    <div className="md:p-12 p-8 flex flex-col justify-center items-center">
+    <div className="xl:p-6 p-4  flex flex-col justify-center items-center">
       <h1 className="text-txt-dark mb-4 text-4xl pb-4 border-b-4 px-4 w-fit border-txt-dark">
         Careers
       </h1>
@@ -25,7 +25,7 @@ export default function Careers() {
               .replace(" ", ". ");
           return (
             <div
-              className="flex flex-col justify-start my-8"
+              className="flex flex-col justify-start my-4"
               key={`career-${index}`}
             >
               <h2 className=" font-medium text-2xl mb-2 w-fit">
@@ -46,7 +46,7 @@ export default function Careers() {
                   {startDate} - {endDate ? endDate : <i>Present</i>}
                 </span>
               </div>
-              <div className="mt-4 pl-1">
+              <div className="mt-4 pl-1 max-w-[700px]">
                 <ul className="list-disc">
                   {career.jobs.map((job, index) => {
                     return (
