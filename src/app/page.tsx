@@ -3,12 +3,12 @@ import Skills from "./components/home/Skills";
 import Careers from "./components/home/Careers";
 import Educations from "./components/home/Educations";
 import Honors from "./components/home/Honors";
-import Navigation from "./components/Navigation";
+import Download from "./components/Download";
 
 function Home() {
   return (
-    <div className="relative">
-      <Navigation />
+    <div className="relative mx-4">
+      <Download />
       <Hero />
       <Careers />
       <Educations />

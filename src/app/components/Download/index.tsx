@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navigation() {
+export default function Download() {
   return (
     <div className="fixed right-2 xl:right-10 bottom-2 xl:bottom-10">
       <Link
