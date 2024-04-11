@@ -4,10 +4,10 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="md:p-12 p-8 flex flex-col md:flex-row justify-center gap-2 items-center">
-      <h1 className=" text-4xl mb-4 md:mb-6 text-center border-[#3d3d3d] md:border-r-4 md:pr-4">
+      <h1 className=" text-4xl md:mb-0 mb-4 text-center border-[#3d3d3d] md:border-r-4 md:pr-4">
         Hi, I&apos;m
         <div className="text-6xl mt-4">Ivan Tanaka</div>
-        <div className="mt-4"> A Web Engineer</div>
+        <div className="mt-4"> Software Engineer</div>
       </h1>
       {/* <p className="text-txt-light xl:w-1/2 mb-4">
         A seasoned web engineer with five years of hands-on experience.
