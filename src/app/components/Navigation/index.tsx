@@ -12,7 +12,7 @@ export default function Navigation() {
       >
         <div className="bg-[#3d3d3d] rounded-full p-2">
           <Image
-            alt="whatsapp"
+            alt="download pdf"
             src="/assets/images/file-download-icon.svg"
             width={35}
             height={35}

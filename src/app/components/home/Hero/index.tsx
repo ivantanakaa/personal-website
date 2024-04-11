@@ -51,6 +51,20 @@ export default function Hero() {
           <div className="ml-2">linkedin.com/in/ivantanakaa</div>
         </Link>
         <Link
+          href={"mailto:tanakaivann97@gmail.com"}
+          className="flex flex-row items-center"
+          target={"_blank"}
+          rel={"noreferrer noopener"}
+        >
+          <Image
+            alt="email"
+            src="/assets/images/email-icon.svg"
+            width={35}
+            height={35}
+          />
+          <div className="ml-2">tanakaivann97@gmail.com</div>
+        </Link>
+        <Link
           href={"https://github.com/ivantanakaa"}
           className="flex flex-row items-center"
           target={"_blank"}
