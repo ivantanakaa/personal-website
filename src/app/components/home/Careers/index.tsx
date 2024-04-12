@@ -1,4 +1,3 @@
-'use client';
 import Link from "next/link";
 import careers from "./careers.json";
 import { sendGAEvent } from "@next/third-parties/google";

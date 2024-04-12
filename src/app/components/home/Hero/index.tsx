@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import contacts from "../../contacts.json";
@@ -30,20 +29,23 @@ export default function Hero() {
             <Link
               href={contact.link}
               key={`contact-${index}`}
-              className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
               target={"_blank"}
               rel={"noreferrer noopener"}
-              onClick={() =>
-                sendGAEvent({ event: "contactClick", value: contact.alt })
-              }
             >
-              <Image
-                alt={contact.alt}
-                src={contact.icon}
-                width={35}
-                height={35}
-              />
-              <div className="ml-2">{contact.label}</div>
+              <a
+                className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
+                onClick={() =>
+                  sendGAEvent({ event: "contactClick", value: contact.alt })
+                }
+              >
+                <Image
+                  alt={contact.alt}
+                  src={contact.icon}
+                  width={35}
+                  height={35}
+                />
+                <div className="ml-2">{contact.label}</div>
+              </a>
             </Link>
           );
         })}

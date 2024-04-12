@@ -1,4 +1,3 @@
-'use client';
 import Link from "next/link";
 import contacts from "../contacts.json";
 import Image from "next/image";
