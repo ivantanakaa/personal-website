@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="flex gap-2 w-fit border-t-4 pt-4 md:pt-0 md:border-t-0 px-2 h-100 border-[#3d3d3d] flex-col justify-center">
         <Link
           href={"https://wa.link/nf8yeb"}
-          className="flex flex-row items-center"
+          className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
           target={"_blank"}
           rel={"noreferrer noopener"}
         >
@@ -38,7 +38,7 @@ export default function Hero() {
         </Link>
         <Link
           href={"https://www.linkedin.com/in/ivantanakaa/"}
-          className="flex flex-row items-center"
+          className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
           target={"_blank"}
           rel={"noreferrer noopener"}
         >
@@ -52,7 +52,7 @@ export default function Hero() {
         </Link>
         <Link
           href={"mailto:tanakaivann97@gmail.com"}
-          className="flex flex-row items-center"
+          className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
           target={"_blank"}
           rel={"noreferrer noopener"}
         >
@@ -66,7 +66,7 @@ export default function Hero() {
         </Link>
         <Link
           href={"https://github.com/ivantanakaa"}
-          className="flex flex-row items-center"
+          className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
           target={"_blank"}
           rel={"noreferrer noopener"}
         >

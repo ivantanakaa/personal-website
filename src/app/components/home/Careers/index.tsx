@@ -30,7 +30,7 @@ export default function Careers() {
             >
               <h2 className=" font-medium text-2xl mb-2 w-fit">
                 <Link
-                  className="text-blue-500"
+                  className="text-blue-500 hover:text-blue-700 hover:transition-all delay-150"
                   href={career.corporate_link}
                   target={"_blank"}
                   rel={"noreferrer noopener"}
