@@ -1,10 +1,9 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import contacts from "../../contacts.json";
-import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Hero() {
+
   return (
     <div className="md:p-12 p-8 flex flex-col md:flex-row justify-center gap-2 items-center">
       <h1 className=" text-4xl md:mb-0 mb-4 text-center border-[#3d3d3d] md:border-r-4 md:pr-4">
@@ -29,26 +28,18 @@ export default function Hero() {
           return (
             <Link
               href={contact.link}
+              className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
               key={`contact-${index}`}
               target={"_blank"}
               rel={"noreferrer noopener"}
             >
-              <a
-                className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
-                onClick={() =>
-                  window.gtag("event", "contact_click", {
-                    value: contact.alt,
-                  })
-                }
-              >
-                <Image
-                  alt={contact.alt}
-                  src={contact.icon}
-                  width={35}
-                  height={35}
-                />
-                <div className="ml-2">{contact.label}</div>
-              </a>
+              <Image
+                alt={contact.alt}
+                src={contact.icon}
+                width={35}
+                height={35}
+              />
+              <div className="ml-2">{contact.label}</div>
             </Link>
           );
         })}
