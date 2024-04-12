@@ -8,6 +8,7 @@ export default function Download() {
         download={"Ivan Tanaka CV"}
         target="_blank"
         href="/assets/pdf/Ivan Tanaka CV.pdf"
+        prefetch={false}
         locale={false}
       >
         <div className="bg-[#3d3d3d] rounded-full p-2">
