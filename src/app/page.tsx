@@ -5,6 +5,7 @@ import Educations from "./components/home/Educations";
 import Honors from "./components/home/Honors";
 import Download from "./components/Download";
 import About from "./components/home/About";
+import Footer from "./components/Footer";
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
       <div className="flex flex-col lg:flex-row lg:w-max lg:m-auto">
         <Skills /> <Honors />
       </div>
-      <div className="mb-10" />
+      <Footer />
     </div>
   );
 }

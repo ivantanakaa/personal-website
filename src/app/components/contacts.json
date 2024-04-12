@@ -1,0 +1,26 @@
+[
+  {
+    "link": "https://wa.link/nf8yeb",
+    "alt": "whatsapp",
+    "icon": "/assets/images/whatsapp-icon.svg",
+    "label": "+62 877-7925-7780"
+  },
+  {
+    "link": "https://www.linkedin.com/in/ivantanakaa/",
+    "alt": "linkedin",
+    "icon": "/assets/images/linkedin-icon.svg",
+    "label": "linkedin.com/in/ivantanakaa"
+  },
+  {
+    "link": "mailto:tanakaivann97@gmail.com",
+    "alt": "email",
+    "icon": "/assets/images/email-icon.svg",
+    "label": "tanakaivann97@gmail.com"
+  },
+  {
+    "link": "https://github.com/ivantanakaa",
+    "alt": "github",
+    "icon": "/assets/images/github-icon.svg",
+    "label": "@ivantanakaa"
+  }
+]

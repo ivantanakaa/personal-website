@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import contacts from "../../contacts.json";
 
 export default function Hero() {
   return (
@@ -22,62 +23,25 @@ export default function Hero() {
       </p> */}
 
       <div className="flex gap-2 w-fit border-t-4 pt-4 md:pt-0 md:border-t-0 px-2 h-100 border-[#3d3d3d] flex-col justify-center">
-        <Link
-          href={"https://wa.link/nf8yeb"}
-          className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
-          target={"_blank"}
-          rel={"noreferrer noopener"}
-        >
-          <Image
-            alt="whatsapp"
-            src="/assets/images/whatsapp-icon.svg"
-            width={35}
-            height={35}
-          />
-          <div className="ml-2">+62 877-7925-7780</div>
-        </Link>
-        <Link
-          href={"https://www.linkedin.com/in/ivantanakaa/"}
-          className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
-          target={"_blank"}
-          rel={"noreferrer noopener"}
-        >
-          <Image
-            alt="linkedin"
-            src="/assets/images/linkedin-icon.svg"
-            width={35}
-            height={35}
-          />
-          <div className="ml-2">linkedin.com/in/ivantanakaa</div>
-        </Link>
-        <Link
-          href={"mailto:tanakaivann97@gmail.com"}
-          className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
-          target={"_blank"}
-          rel={"noreferrer noopener"}
-        >
-          <Image
-            alt="email"
-            src="/assets/images/email-icon.svg"
-            width={35}
-            height={35}
-          />
-          <div className="ml-2">tanakaivann97@gmail.com</div>
-        </Link>
-        <Link
-          href={"https://github.com/ivantanakaa"}
-          className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
-          target={"_blank"}
-          rel={"noreferrer noopener"}
-        >
-          <Image
-            alt="github"
-            src="/assets/images/github-icon.svg"
-            width={35}
-            height={35}
-          />
-          <div className="ml-2">@ivantanakaa</div>
-        </Link>
+        {contacts.map((contact, index) => {
+          return (
+            <Link
+              href={contact.link}
+              key={`contact-${index}`}
+              className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
+              target={"_blank"}
+              rel={"noreferrer noopener"}
+            >
+              <Image
+                alt={contact.alt}
+                src={contact.icon}
+                width={35}
+                height={35}
+              />
+              <div className="ml-2">{contact.label}</div>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

@@ -4,9 +4,11 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const years_of_experience = new Date().getFullYear() - 2018;
+
 export const metadata: Metadata = {
   title: "Ivan Tanaka",
-  description: "Web Engineer | Frontend Developer",
+  description: `A seasoned Software Engineer with ${years_of_experience} years of hands-on experience.`,
 };
 
 export default function RootLayout({
@@ -23,7 +25,7 @@ export default function RootLayout({
         />
         <meta
           name="keywords"
-          content="React.js, Next.js , Flutter, Laravel, Typescript, Web Engineer, Web Developer, Frontend Engineer, Frontend Developer"
+          content="React.js, Next.js , Flutter, Laravel, Typescript, Vue.js, Tailwind, Web Engineer, Web Developer, Frontend Engineer, Frontend Developer, Software Engineer, Software Developer"
         ></meta>
         <meta
           name="viewport"
