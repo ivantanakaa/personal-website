@@ -41,7 +41,7 @@ export default function Careers() {
                     <a
                       onClick={() =>
                         sendGAEvent({
-                          event: "careerClick",
+                          event: "career_click",
                           value: career.corporate,
                         })
                       }

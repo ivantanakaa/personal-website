@@ -18,7 +18,7 @@ export default function Footer() {
             >
               <a
                 onClick={() =>
-                  sendGAEvent({ event: "contactClick", value: contact.alt })
+                  sendGAEvent({ event: "contact_click", value: contact.alt })
                 }
               >
                 <Image
