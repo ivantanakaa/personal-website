@@ -13,11 +13,12 @@ function Home() {
       <Download />
       <Hero />
       <About />
+      <Skills />
       <Careers />
       <Educations />
-      <div className="flex flex-col lg:flex-row lg:w-max lg:m-auto">
-        <Skills /> <Honors />
-      </div>
+      <Honors />
+      {/* <div className="flex flex-col lg:flex-row lg:w-max lg:m-auto">
+      </div> */}
       <Footer />
     </div>
   );
