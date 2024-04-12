@@ -1,6 +1,8 @@
+'use client';
 import Link from "next/link";
 import contacts from "../contacts.json";
 import Image from "next/image";
+import { sendGAEvent } from "@next/third-parties/google";
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center justify-center mt-8 py-2">
@@ -14,12 +16,18 @@ export default function Footer() {
               target={"_blank"}
               rel={"noreferrer noopener"}
             >
-              <Image
-                alt={contact.alt}
-                src={contact.icon}
-                width={30}
-                height={30}
-              />
+              <a
+                onClick={() =>
+                  sendGAEvent({ event: "contactClick", value: contact.alt })
+                }
+              >
+                <Image
+                  alt={contact.alt}
+                  src={contact.icon}
+                  width={30}
+                  height={30}
+                />
+              </a>
             </Link>
           );
         })}

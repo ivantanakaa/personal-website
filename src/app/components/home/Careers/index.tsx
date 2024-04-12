@@ -1,5 +1,7 @@
+'use client';
 import Link from "next/link";
 import careers from "./careers.json";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Careers() {
   return (
@@ -36,7 +38,16 @@ export default function Careers() {
                     target={"_blank"}
                     rel={"noreferrer noopener"}
                   >
-                    {career.corporate}
+                    <a
+                      onClick={() =>
+                        sendGAEvent({
+                          event: "careerClick",
+                          value: career.corporate,
+                        })
+                      }
+                    >
+                      {career.corporate}
+                    </a>
                   </Link>
                 ) : (
                   career.corporate

@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import contacts from "../../contacts.json";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Hero() {
   return (
@@ -31,6 +33,9 @@ export default function Hero() {
               className="flex flex-row items-center hover:opacity-70 hover:transition-all  delay-150"
               target={"_blank"}
               rel={"noreferrer noopener"}
+              onClick={() =>
+                sendGAEvent({ event: "contactClick", value: contact.alt })
+              }
             >
               <Image
                 alt={contact.alt}
