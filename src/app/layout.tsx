@@ -25,6 +25,10 @@ export default function RootLayout({
           name="keywords"
           content="React.js, Next.js , Flutter, Laravel, Typescript, Web Engineer, Web Developer, Frontend Engineer, Frontend Developer"
         ></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>{children}</body>
