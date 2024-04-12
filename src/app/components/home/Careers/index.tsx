@@ -29,14 +29,18 @@ export default function Careers() {
               key={`career-${index}`}
             >
               <h2 className=" font-medium text-2xl mb-2 w-fit">
-                <Link
-                  className="text-blue-500 hover:text-blue-700 hover:transition-all delay-150"
-                  href={career.corporate_link}
-                  target={"_blank"}
-                  rel={"noreferrer noopener"}
-                >
-                  {career.corporate}
-                </Link>
+                {career.corporate_link ? (
+                  <Link
+                    className="text-blue-500 hover:text-blue-700 hover:transition-all delay-150"
+                    href={career.corporate_link}
+                    target={"_blank"}
+                    rel={"noreferrer noopener"}
+                  >
+                    {career.corporate}
+                  </Link>
+                ) : (
+                  career.corporate
+                )}
                 <span className=" border-l-4 ml-4 pl-4 h-100 border-[#3d3d3d]">
                   {career.position}
                 </span>

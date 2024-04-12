@@ -52,5 +52,16 @@
       "Apply MVVM and Provider for the state management.",
       "Develop Arabic learning application using <b>Flutter.</b>"
     ]
+  },
+  {
+    "corporate": "Royal Brewhouse Group",
+    "position": "Backend Developer",
+    "start_date": "2018/08",
+    "end_date": "2019/04",
+    "jobs": [
+      "Backend developer specializing in <b>Laravel.</b>",
+      "Experienced in <b>RESTful API, MVC architecture, and database design.</b>",
+      "Developing <i>marketplace backoffice system</i>."
+    ]
   }
 ]

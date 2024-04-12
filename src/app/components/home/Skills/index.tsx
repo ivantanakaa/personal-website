@@ -5,7 +5,7 @@ export default function Skills() {
       <h1 className="text-txt-dark text-4xl mb-4 pb-4 border-b-4 px-4 w-fit border-txt-dark">
         Skills
       </h1>
-      <ul className="list-disc grid grid-rows-4 grid-flow-col gap-y-4 gap-x-16">
+      <ul className="list-disc grid grid-cols-3 grid-flow-row gap-y-4 gap-x-16">
         {skills.map((data, index) => {
           return <li key={`skill-${index}`}>{data}</li>;
         })}
