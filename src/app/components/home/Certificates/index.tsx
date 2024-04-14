@@ -2,11 +2,17 @@
 
 import Image from "next/image";
 import certificates from "./certificates.json";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Cerificates() {
+  const [showAll, setShowAll] = useState<boolean>(false);
+
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
+
   const renderCertificates = () => {
     return certificates.map((certificate, index) => {
       const issueDate = new Date(certificate.issue_date)
@@ -30,8 +36,13 @@ export default function Cerificates() {
             });
           }}
         >
-          <li className="flex flex-col justify-start my-4">
-            <h2 className=" font-medium text-2xl w-fit">{certificate.title}</h2>
+          <li
+            className={
+              "flex flex-col justify-start my-4 " +
+              (index < 4 || showAll ? "block" : "hidden")
+            }
+          >
+            <h2 className="font-medium text-2xl w-fit">{certificate.title}</h2>
             <div>
               <span>
                 {certificate.issued_by} | {issueDate}
@@ -57,9 +68,18 @@ export default function Cerificates() {
         Licenses & Certificates
       </h1>
 
-      <ul className="list-disc grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1  grid-flow-row gap-y-4 gap-x-16">
+      <ul className="list-disc grid md:grid-cols-2 xl:grid-cols-4 grid-cols-1  grid-flow-row gap-y-4 gap-x-16">
         {renderCertificates()}
       </ul>
+      <div
+        className={
+          "text-txt-dark mb-4 pb-1 border-b-4 px-4 w-fit border-txt-dark cursor-pointer " +
+          (showAll ? "hidden" : "block")
+        }
+        onClick={handleShowAll}
+      >
+        Show All
+      </div>
     </div>
   );
 }
