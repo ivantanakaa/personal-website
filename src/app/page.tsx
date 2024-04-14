@@ -6,6 +6,7 @@ import Honors from "./components/home/Honors";
 import Download from "./components/Download";
 import About from "./components/home/About";
 import Footer from "./components/Footer";
+import Cerificates from "./components/home/Certificates";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <Careers />
       <Educations />
       <Honors />
+      <Cerificates />
       {/* <div className="flex flex-col lg:flex-row lg:w-max lg:m-auto">
       </div> */}
       <Footer />
