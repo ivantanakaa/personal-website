@@ -3,6 +3,8 @@
 import Image from "next/image";
 import certificates from "./certificates.json";
 import React from "react";
+import Link from "next/link";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Cerificates() {
   const renderCertificates = () => {
@@ -14,25 +16,37 @@ export default function Cerificates() {
         })
         .replace(" ", ". ");
       return (
-        <li
-          className="flex flex-col justify-start my-4"
+        <Link
+          href={certificate.link}
+          target="_blank"
+          rel={"noreferrer noopener"}
           key={`certificates-${index}`}
+          onClick={() => {
+            sendGAEvent("event", "certificates_clicked", {
+              value: {
+                title: certificate.title,
+                issued_by: certificate.issued_by,
+              },
+            });
+          }}
         >
-          <h2 className=" font-medium text-2xl w-fit">{certificate.title}</h2>
-          <div>
-            <span>
-              {certificate.issued_by} | {issueDate}
-            </span>
-          </div>
-          <div>
-            <Image
-              alt={certificate.title}
-              src={certificate.src}
-              width={330}
-              height={255}
-            />
-          </div>
-        </li>
+          <li className="flex flex-col justify-start my-4">
+            <h2 className=" font-medium text-2xl w-fit">{certificate.title}</h2>
+            <div>
+              <span>
+                {certificate.issued_by} | {issueDate}
+              </span>
+            </div>
+            <div>
+              <Image
+                alt={certificate.title}
+                src={certificate.src}
+                width={330}
+                height={255}
+              />
+            </div>
+          </li>
+        </Link>
       );
     });
   };
