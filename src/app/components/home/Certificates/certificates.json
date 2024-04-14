@@ -1,59 +1,114 @@
 [
-  {
-    "title": "JavaScript (Basic)",
-    "issued_by": "HackerRank",
-    "issue_date": "14 Apr 2024",
-    "link": "https://www.hackerrank.com/certificates/b3273ff0e005",
-    "src": "/assets/images/certificates/javascript_basic certificate.png"
-  },
-
-  {
-    "title": "CSS (Basic)",
-    "issued_by": "HackerRank",
-    "issue_date": "14 Apr 2024",
-    "link": "https://www.hackerrank.com/certificates/f448b8542515",
-    "src": "/assets/images/certificates/css certificate.png"
-  },
-  {
-    "title": "SQL (Basic)",
-    "issued_by": "HackerRank",
-    "issue_date": "15 Sep 2020",
-    "link": "https://www.hackerrank.com/certificates/404785aea52e",
-    "src": "/assets/images/certificates/sql_basic certificate.png"
-  },
-  {
-    "title": "React (Basic)",
-    "issued_by": "HackerRank",
-    "issue_date": "09 Nov 2023",
-    "link": "https://www.hackerrank.com/certificates/414898532196",
-    "src": "/assets/images/certificates/react_basic certificate.png"
-  },
-  {
-    "title": "Problem Solving (Basic)",
-    "issued_by": "HackerRank",
-    "issue_date": "14 Apr 2024",
-    "link": "https://www.hackerrank.com/certificates/738aed00fbd7",
-    "src": "/assets/images/certificates/problem_solving_basic certificate.png"
-  },
-  {
-    "title": "Frontend Developer (React)",
-    "issued_by": "HackerRank",
-    "issue_date": "09 Nov 2023",
-    "link": "https://www.hackerrank.com/certificates/3b233143448d",
-    "src": "/assets/images/certificates/frontend_developer_react certificate.png"
-  },
-  {
-    "title": "Software Engineer Intern",
-    "issued_by": "HackerRank",
-    "issue_date": "14 Apr 2024",
-    "link": "https://www.hackerrank.com/certificates/9458d5209cec",
-    "src": "/assets/images/certificates/software_engineer_intern certificate.png"
-  },
-  {
-    "title": "Software Engineer",
-    "issued_by": "HackerRank",
-    "issue_date": "14 Apr 2024",
-    "link": "https://www.hackerrank.com/certificates/20393a020d80",
-    "src": "/assets/images/certificates/software_engineer certificate.png"
-  }
+    {
+        "title": "JavaScript (Basic)",
+        "issued_by": "HackerRank",
+        "issue_date": "14 Apr 2024",
+        "link": "https://www.hackerrank.com/certificates/b3273ff0e005",
+        "src": "/assets/images/certificates/javascript_basic certificate.png"
+    },
+    {
+        "title": "CSS (Basic)",
+        "issued_by": "HackerRank",
+        "issue_date": "14 Apr 2024",
+        "link": "https://www.hackerrank.com/certificates/f448b8542515",
+        "src": "/assets/images/certificates/css certificate.png"
+    },
+    {
+        "title": "Problem Solving (Basic)",
+        "issued_by": "HackerRank",
+        "issue_date": "14 Apr 2024",
+        "link": "https://www.hackerrank.com/certificates/738aed00fbd7",
+        "src": "/assets/images/certificates/problem_solving_basic certificate.png"
+    },
+    {
+        "title": "Software Engineer Intern",
+        "issued_by": "HackerRank",
+        "issue_date": "14 Apr 2024",
+        "link": "https://www.hackerrank.com/certificates/9458d5209cec",
+        "src": "/assets/images/certificates/software_engineer_intern certificate.png"
+    },
+    {
+        "title": "Software Engineer",
+        "issued_by": "HackerRank",
+        "issue_date": "14 Apr 2024",
+        "link": "https://www.hackerrank.com/certificates/20393a020d80",
+        "src": "/assets/images/certificates/software_engineer certificate.png"
+    },
+    {
+        "title": "React (Basic)",
+        "issued_by": "HackerRank",
+        "issue_date": "09 Nov 2023",
+        "link": "https://www.hackerrank.com/certificates/414898532196",
+        "src": "/assets/images/certificates/react_basic certificate.png"
+    },
+    {
+        "title": "Frontend Developer (React)",
+        "issued_by": "HackerRank",
+        "issue_date": "09 Nov 2023",
+        "link": "https://www.hackerrank.com/certificates/3b233143448d",
+        "src": "/assets/images/certificates/frontend_developer_react certificate.png"
+    },
+    {
+        "title": "React + Redux",
+        "issued_by": "Sololearn",
+        "issue_date": "04 February 2022",
+        "link": "https://www.sololearn.com/certificates/CT-PPMSSMD5",
+        "src": "/assets/images/certificates/5664c16b-b8ce-4786-93ec-05877c672c89.png"
+    },
+    {
+        "title": "SQL (Basic)",
+        "issued_by": "HackerRank",
+        "issue_date": "15 Sep 2020",
+        "link": "https://www.hackerrank.com/certificates/404785aea52e",
+        "src": "/assets/images/certificates/sql_basic certificate.png"
+    },
+    {
+        "title": "PHP",
+        "issued_by": "Sololearn",
+        "issue_date": "20 November 2017",
+        "link": "https://www.sololearn.com/certificates/CT-VZDHNQBV",
+        "src": "/assets/images/certificates/b08fb156-78c8-442c-a48a-31c056b0bcf4.png"
+    },
+    {
+        "title": "JavaScript",
+        "issued_by": "Sololearn",
+        "issue_date": "27 August 2017",
+        "link": "https://www.sololearn.com/certificates/CT-LMTP3EXF",
+        "src": "/assets/images/certificates/2cc3e464-a019-489d-9881-dd9f15a31bb1.png"
+    },
+    {
+        "title": "jQuery",
+        "issued_by": "Sololearn",
+        "issue_date": "27 August 2017",
+        "link": "https://www.sololearn.com/certificates/CT-6183WCZF",
+        "src": "/assets/images/certificates/454d4b7b-700c-4098-9824-73d2435726cc.png"
+    },
+    {
+        "title": "CSS",
+        "issued_by": "Sololearn",
+        "issue_date": "27 August 2017",
+        "link": "https://www.sololearn.com/certificates/CT-KTIJKHPG",
+        "src": "/assets/images/certificates/0783e9b5-c8a0-4124-8a96-974fc877e68c.png"
+    },
+    {
+        "title": "HTML",
+        "issued_by": "Sololearn",
+        "issue_date": "30 April 2017",
+        "link": "https://www.sololearn.com/certificates/CT-ZJIREKAX",
+        "src": "/assets/images/certificates/a6863102-de97-4a56-b503-954ac84473d5.png"
+    },
+    {
+        "title": "SQL",
+        "issued_by": "Sololearn",
+        "issue_date": "23 April 2017",
+        "link": "https://www.sololearn.com/certificates/CT-PHNHNPHM",
+        "src": "/assets/images/certificates/7da6dd8c-170d-4e13-81a8-72addeecc42b.png"
+    },
+    {
+        "title": "Java",
+        "issued_by": "Sololearn",
+        "issue_date": "23 April 2017",
+        "link": "https://www.sololearn.com/certificates/CT-DBCZ6FAM",
+        "src": "/assets/images/certificates/a9d371dc-223b-421b-bbed-6081639e1fe9.png"
+    }
 ]
