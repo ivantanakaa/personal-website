@@ -10,6 +10,7 @@ export default function Cerificates() {
   const [showAll, setShowAll] = useState<boolean>(false);
 
   const handleShowAll = () => {
+    sendGAEvent("event", "show_more_certificates_clicked");
     setShowAll(true);
   };
 
