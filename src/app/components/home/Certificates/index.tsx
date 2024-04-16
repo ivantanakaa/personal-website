@@ -11,7 +11,7 @@ export default function Cerificates() {
 
   const handleShowAll = () => {
     sendGAEvent("event", "show_more_certificates_clicked");
-    setShowAll(true);
+    setShowAll((prev) => !prev);
   };
 
   const renderCertificates = () => {
@@ -25,6 +25,7 @@ export default function Cerificates() {
       return (
         <Link
           href={certificate.link}
+          className={index < 4 || showAll ? "block" : "hidden"}
           target="_blank"
           rel={"noreferrer noopener"}
           key={`certificates-${index}`}
@@ -37,12 +38,7 @@ export default function Cerificates() {
             });
           }}
         >
-          <li
-            className={
-              "flex flex-col justify-start my-4 " +
-              (index < 4 || showAll ? "block" : "hidden")
-            }
-          >
+          <li className={"flex flex-col justify-start my-4"}>
             <h2 className="font-medium text-2xl w-fit">{certificate.title}</h2>
             <div>
               <span>
