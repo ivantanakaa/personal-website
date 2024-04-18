@@ -34,7 +34,8 @@ export default function Hero() {
               target={"_blank"}
               rel={"noreferrer noopener"}
               onClick={() => {
-                sendGAEvent("event", "contact_clicked", {
+                sendGAEvent("event", "click", {
+                  context: "contact",
                   value: contact.alt,
                   position: "hero",
                 });

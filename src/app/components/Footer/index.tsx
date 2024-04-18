@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Link from "next/link";
 import contacts from "../contacts.json";
 import Image from "next/image";
@@ -16,7 +16,8 @@ export default function Footer() {
               target={"_blank"}
               rel={"noreferrer noopener"}
               onClick={() => {
-                sendGAEvent("event", "contact_clicked", {
+                sendGAEvent("event", "click", {
+                  context: "contact",
                   value: contact.alt,
                   position: "footer",
                 });

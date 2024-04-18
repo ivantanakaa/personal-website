@@ -13,7 +13,7 @@ export default function Download() {
         prefetch={false}
         locale={false}
         onClick={() => {
-          sendGAEvent("event", "download_resume",{});
+          sendGAEvent("event", "click", { context: "download_resume" });
         }}
       >
         <div className="bg-[#3d3d3d] rounded-full p-2 md:px-4 flex flex-row items-center hover:opacity-75 hover:transition-all delay-150">

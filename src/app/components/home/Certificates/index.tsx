@@ -10,7 +10,7 @@ export default function Cerificates() {
   const [showAll, setShowAll] = useState<boolean>(false);
 
   const handleShowAll = () => {
-    sendGAEvent("event", "show_more_certificates_clicked");
+    sendGAEvent("event", "click", { context: "certificates.show_more" });
     setShowAll((prev) => !prev);
   };
 
@@ -30,7 +30,8 @@ export default function Cerificates() {
           rel={"noreferrer noopener"}
           key={`certificates-${index}`}
           onClick={() => {
-            sendGAEvent("event", "certificates_clicked", {
+            sendGAEvent("event", "click", {
+              context: "certificcates",
               value: {
                 title: certificate.title,
                 issued_by: certificate.issued_by,
