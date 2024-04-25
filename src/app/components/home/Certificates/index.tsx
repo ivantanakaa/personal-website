@@ -71,7 +71,7 @@ export default function Cerificates() {
       </ul>
       <div
         className={
-          "text-txt-dark mb-4 pb-1 border-b-4 px-4 w-fit border-txt-dark cursor-pointer " +
+          "text-txt-dark mb-4 pb-1 border-b-4 px-4 w-fit border-txt-dark cursor-pointer hover:opacity-75 hover:transition-all delay-150 " +
           (showAll ? "hidden" : "block")
         }
         onClick={handleShowAll}

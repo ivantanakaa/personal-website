@@ -106,7 +106,7 @@ export default function Portfolios() {
         <Link
           href={"/portfolios"}
           className={
-            "text-txt-dark mb-4 pb-1 border-b-4 px-4 w-fit border-txt-dark cursor-pointer mt-4"
+            "text-txt-dark mb-4 pb-1 border-b-4 px-4 w-fit border-txt-dark cursor-pointer mt-4 hover:opacity-75 hover:transition-all delay-150"
           }
           onClick={handleShowAll}
         >

@@ -15,7 +15,7 @@ export default function Back(params: BackParams) {
     return router.back();
   };
   return (
-    <div className="fixed top-0 left-0" onClick={handleBack}>
+    <div className="fixed top-0 left-0 cursor-pointer" onClick={handleBack}>
       <div className="p-2 md:px-4 flex flex-row items-center hover:opacity-75 hover:transition-all delay-150">
         <Image
           alt="back"
