@@ -31,7 +31,7 @@ export default function Cerificates() {
           key={`certificates-${index}`}
           onClick={() => {
             sendGAEvent("event", "click", {
-              context: "certificcates",
+              context: "certificates",
               value: {
                 title: certificate.title,
                 issued_by: certificate.issued_by,
@@ -40,7 +40,7 @@ export default function Cerificates() {
           }}
         >
           <li className={"flex flex-col justify-start my-4"}>
-            <h2 className="font-medium text-2xl w-fit">{certificate.title}</h2>
+            <h2 className="font-medium text-xl w-fit">{certificate.title}</h2>
             <div>
               <span>
                 {certificate.issued_by} | {issueDate}
@@ -62,11 +62,11 @@ export default function Cerificates() {
 
   return (
     <div className="xl:p-6 p-4  flex flex-col justify-center items-center">
-      <h1 className="text-txt-dark mb-4 text-4xl pb-4 border-b-4 px-4 w-fit border-txt-dark">
+      <h1 className="text-txt-dark mb-4 text-4xl pb-4 border-b-4 px-4 w-fit border-txt-dark text-center">
         Licenses & Certificates
       </h1>
 
-      <ul className="list-disc grid md:grid-cols-2 xl:grid-cols-4 grid-cols-1  grid-flow-row gap-y-4 gap-x-16">
+      <ul className="list-none grid md:grid-cols-2 xl:grid-cols-4 grid-cols-1  grid-flow-row gap-y-4 gap-x-16">
         {renderCertificates()}
       </ul>
       <div
