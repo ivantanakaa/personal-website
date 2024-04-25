@@ -43,8 +43,8 @@ export default function Portfolios() {
             width={400}
             height={225}
           />
-          <div className="flex flex-col justify-center items-center md:block md:ml-4 md:max-w-[500px] my-2">
-            <h2 className="font-medium text-xl w-fit text-center mb-2">
+          <div className="flex flex-col justify-center items-center md:block md:ml-4 md:max-w-[500px] mb-2 mt-12 md:mt-2">
+            <h2 className="font-medium text-xl w-fit text-center mb-4 md:mb-2 border-b-4 pb-2 px-4 md:p-0 border-txt-dark md:border-none">
               {portfolio.name}
             </h2>
             <div

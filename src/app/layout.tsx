@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
+
 
 const years_of_experience = new Date().getFullYear() - 2018;
 
 export const metadata: Metadata = {
-  title: "Ivan Tanaka",
-  description: `A seasoned Software Engineer with ${years_of_experience} years of hands-on experience.`,
+  description: `Ivan Tanaka - A seasoned Software Engineer with ${years_of_experience} years of hands-on experience.`,
 };
 
 export default function RootLayout({

@@ -8,6 +8,11 @@ import Portfolios from "./components/home/Portfolios";
 import Cerificates from "./components/home/Certificates";
 import Footer from "./components/Footer";
 import Download from "./components/Download";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
 
 function HomePage() {
   return (
@@ -21,8 +26,6 @@ function HomePage() {
       <Honors />
       <Portfolios />
       <Cerificates />
-      {/* <div className="flex flex-col lg:flex-row lg:w-max lg:m-auto">
-      </div> */}
       <Footer />
     </div>
   );

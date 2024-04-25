@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import Download from "../components/Download";
 import Footer from "../components/Footer";
 import Portfolios from "../components/home/Portfolios";
+
+export const metadata: Metadata = {
+  title: "Portfolios",
+};
 
 function PortfoliosPage() {
   return (
