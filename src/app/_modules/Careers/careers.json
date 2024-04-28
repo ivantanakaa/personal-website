@@ -6,9 +6,9 @@
     "start_date": "2023/12",
     "end_date": null,
     "jobs": [
-      "Develop mutual fund investment application and web using <b>Next.js</b> and <b>Vue.js.</b>",
+      "Develop mutual fund investment application and web using <strong>Next.js</strong> and <strong>Vue.js.</strong>",
       "In charge for coordinating with vendor and stakeholder as an IT representative.",
-      "Refactoring legacy code using <b>Next.js.</b>"
+      "Refactoring legacy code using <strong>Next.js.</strong>"
     ]
   },
   {
@@ -18,10 +18,10 @@
     "start_date": "2022/05",
     "end_date": "2023/10",
     "jobs": [
-      "Develop mutual fund investment ecosystem application and web using <b>React.js.</b>",
+      "Develop mutual fund investment ecosystem application and web using <strong>React.js.</strong>",
       "In charge for developing <i>Bibit Institution</i> an investment product for institutional clients.",
       "In charge for developing a filter system for Top Product.",
-      "Develop a webpage for institutional product using <b>Next.js.</b>",
+      "Develop a webpage for institutional product using <strong>Next.js.</strong>",
       "Develop a stamp duty payment feature.",
       "Daily bug fixing and analytics implementation to ensure software reliability."
     ]
@@ -33,9 +33,9 @@
     "start_date": "2021/01",
     "end_date": "2022/03",
     "jobs": [
-      "Develop remittance ecosystem for mobile and web using <b>React.js, React Native and Next.js.</b>",
-      "Develop webpage for company profile using <b>React.js.</b>",
-      "Develop <i>Topremit for Business</i>, a remittance service for corporate clients, using <b>Next.js.</b>",
+      "Develop remittance ecosystem for mobile and web using <strong>React.js, React Native and Next.js.</strong>",
+      "Develop webpage for company profile using <strong>React.js.</strong>",
+      "Develop <i>Topremit for Business</i>, a remittance service for corporate clients, using <strong>Next.js.</strong>",
       "Develop OTP phone verification for sign in process.",
       "Daily bug fixing to maintain software functionality."
     ]
@@ -48,9 +48,9 @@
     "end_date": "2020/01",
     "jobs": [
       "Using Scrum and Kanban (Scrumban).",
-      "Develop apps for languages e-learning using <b>Flutter</b> framework.",
+      "Develop apps for languages e-learning using <strong>Flutter</strong> framework.",
       "Apply MVVM and Provider for the state management.",
-      "Develop Arabic learning application using <b>Flutter.</b>"
+      "Develop Arabic learning application using <strong>Flutter.</strong>"
     ]
   },
   {
@@ -59,8 +59,8 @@
     "start_date": "2018/08",
     "end_date": "2019/04",
     "jobs": [
-      "Backend developer specializing in <b>Laravel.</b>",
-      "Experienced in <b>RESTful API, MVC architecture, and database design.</b>",
+      "Backend developer specializing in <strong>Laravel.</strong>",
+      "Experienced in <strong>RESTful API, MVC architecture, and database design.</strong>",
       "Developing <i>marketplace backoffice system</i>."
     ]
   }

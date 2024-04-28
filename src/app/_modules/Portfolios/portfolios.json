@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Ayovest",
+    "alt": "ayovest",
+    "link": {
+      "url": "https://www.ayovest.id/",
+      "text": "https://www.ayovest.id/"
+    },
+    "src": "/assets/images/portfolios/ayovest.svg",
+    "description": "I developed a mutual fund investment application and web platform using <strong>Next.js and Vue.js</strong>. In my role, I coordinated with vendors and stakeholders as the IT representative. Additionally, I refactored legacy code using <strong>Next.js</strong> to improve performance and maintainability.",
+    "tags": ["React.js", "Typescript", "Next.js", "Tailwind.js", "Vue.js"]
+  },
+  {
+    "name": "Thomas Edison",
+    "alt": "thomas edison",
+    "src": "/assets/images/portfolios/thomas_edison.svg",
+    "description": "Thomas Edison is an <strong>electrical supply store.</strong> The owner needed a system to track their supply and sales. As a Software Engineer, I interviewed the store owner to identify their needs and developed custom solutions. I <strong>designed and implemented a website</strong> featuring <strong>procurement, sales, quantity management, and returns functionalities</strong>. This project was developed using <strong>Laravel and Next.js</strong>.",
+    "tags": ["Laravel", "React.js", "Typescript", "Next.js"]
+  },
+  {
+    "name": "Bibit",
+    "alt": "bibit",
+    "link": {
+      "url": "https://www.bibit.id/",
+      "text": "https://www.bibit.id/"
+    },
+    "src": "/assets/images/portfolios/bibit.svg",
+    "description": "Bibit is an <strong>investment company</strong> based in Indonesia. As a remote company, I am challenged to strengthen my communication as most of our teams collaborated from different location. I am in charge with several projects, the most significant might be <strong>Bibit Institution.</strong> It&apos;s an <strong>mutual fund investment targeted for a corporate.</strong>",
+    "tags": ["React.js", "Typescript", "Next.js"]
+  },
+  {
+    "name": "Topremit",
+    "alt": "topremit",
+    "link": {
+      "url": "https://topremit.com/en",
+      "text": "https://topremit.com/en"
+    },
+    "src": "/assets/images/portfolios/topremit.svg",
+    "description": "Topremit is a <strong>remittance startup company</strong> based in Medan. In case you are unfamiliar with the word, Remittance means sending money abroad. In this company I got the chance to utilized <strong>React.js and Next.js</strong>. I also got the chance to contributed building the business sections and experiencing creating Authorization and Authentication with the teams.",
+    "tags": ["React.js", "Next.js"]
+  },
+  {
+    "name": "Artech",
+    "alt": "artech",
+    "link": {
+      "url": "http://bit.ly/ArtechApps",
+      "text": "http://bit.ly/ArtechApps"
+    },
+    "src": "/assets/images/portfolios/artech.svg",
+    "description": "Artech is an <strong>electronics selling company.</strong> I was asked to create a membership points application using <strong>React Native</strong> as the frameworks. We used <strong>Firebase notification</strong> for the notification and <strong>JWT-token for the Authentication</strong>. In this project I got the chance to create the mockup apps prototype using <strong>Figma.</strong>",
+    "tags": ["React Native", "Figma"]
+  },
+  {
+    "name": "Membee",
+    "alt": "membee",
+    "link": {
+      "url": "http://bit.ly/MembeeApps",
+      "text": "http://bit.ly/MembeeApps"
+    },
+    "src": "/assets/images/portfolios/membee.svg",
+    "description": "Membee is a <strong>food ordering system</strong> I created for my final project. It let user to order food and reserve a table from their phone. I used <strong>Laravel</strong> for the backend and <strong>Flutter</strong> for the mobile apps. I got the chance to experience Xendit (A Payment Gateway) for the payment method.",
+    "tags": ["Flutter", "Laravel"]
+  },
+  {
+    "name": "Aminin",
+    "alt": "aminin",
+    "link": {
+      "url": "http://bit.ly/AmininApps",
+      "text": "http://bit.ly/AmininApps"
+    },
+    "src": "/assets/images/portfolios/aminin.svg",
+    "description": "Aminin is the second project I contributed in Bahaso. It's an apps about <strong>Arabic e-learning.</strong> I got the chance to learn about <strong>Deeplink, Geolocator, and experience more of Flutter framework</strong>. Not to mention I learnt a lot about Arabic languages and cultures in the process which made this experience more exciting!",
+    "tags": ["Flutter"]
+  },
+  {
+    "name": "Bahaso",
+    "alt": "bahaso",
+    "link": {
+      "url": "http://bit.ly/BahasoApps",
+      "text": "http://bit.ly/BahasoApps"
+    },
+    "src": "/assets/images/portfolios/bahaso.svg",
+    "description": "Bahaso is an <strong>e-learning startup</strong> company based in Jakarta. I was asked to continue their projects while using <strong>Flutter</strong> framework. It's a really exciting experience, as they let me to build a Flutter module from the start, finding a better <strong>state management</strong> for the project, we choose Provider after some research.",
+    "tags": ["Flutter"]
+  }
+]

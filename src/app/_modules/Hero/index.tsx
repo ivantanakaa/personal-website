@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import contacts from "../../contacts.json";
+import contacts from "../../_components/contacts.json";
 import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Hero() {

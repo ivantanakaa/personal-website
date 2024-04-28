@@ -1,13 +1,13 @@
-import Hero from "./components/modules/Hero";
-import About from "./components/modules/About";
-import Skills from "./components/modules/Skills";
-import Careers from "./components/modules/Careers";
-import Educations from "./components/modules/Educations";
-import Honors from "./components/modules/Honors";
-import Portfolios from "./components/modules/Portfolios";
-import Cerificates from "./components/modules/Certificates";
-import Footer from "./components/Footer";
-import Download from "./components/Download";
+import Hero from "./_modules/Hero";
+import About from "./_modules/About";
+import Skills from "./_modules/Skills";
+import Careers from "./_modules/Careers";
+import Educations from "./_modules/Educations";
+import Honors from "./_modules/Honors";
+import Portfolios from "./_modules/Portfolios";
+import Cerificates from "./_modules/Certificates";
+import Footer from "./_components/Footer";
+import Download from "./_components/Download";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

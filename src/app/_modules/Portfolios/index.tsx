@@ -6,7 +6,7 @@ import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
 import portfolios from "./portfolios.json";
 import { usePathname } from "next/navigation";
-import Back from "../../Back";
+import Back from "../../_components/Back";
 
 const HOME_PAGE_PATH = "/";
 
