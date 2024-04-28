@@ -5,6 +5,7 @@ import certificates from "./certificates.json";
 import React, { useState } from "react";
 import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
+import { dateFormatMonthYear } from "@/app/utils";
 
 export default function Cerificates() {
   const [showAll, setShowAll] = useState<boolean>(false);
@@ -16,12 +17,7 @@ export default function Cerificates() {
 
   const renderCertificates = () => {
     return certificates.map((certificate, index) => {
-      const issueDate = new Date(certificate.issue_date)
-        .toLocaleDateString("en-GB", {
-          month: "short",
-          year: "numeric",
-        })
-        .replace(" ", ". ");
+      const issueDate = dateFormatMonthYear(certificate.issue_date);
       return (
         <Link
           href={certificate.link}

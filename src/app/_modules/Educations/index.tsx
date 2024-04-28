@@ -1,19 +1,11 @@
+import { dateFormatYear } from "@/app/utils";
 import educations from "./educations.json";
 
 export default function Educations() {
   const renderEducations = () => {
     return educations.map((education, index) => {
-      const startDate = new Date(education.start_date).toLocaleDateString(
-        "en-GB",
-        {
-          year: "numeric",
-        }
-      );
-      const endDate =
-        education.end_date &&
-        new Date(education.end_date).toLocaleDateString("en-GB", {
-          year: "numeric",
-        });
+      const startDate = dateFormatYear(education.start_date);
+      const endDate = education.end_date && dateFormatYear(education.end_date);
       return (
         <div
           className="flex flex-col justify-start my-4"

@@ -2,24 +2,13 @@
 import Link from "next/link";
 import careers from "./careers.json";
 import { sendGAEvent } from "@next/third-parties/google";
+import { dateFormatMonthYear } from "@/app/utils";
 
 export default function Careers() {
   const renderCareers = () => {
     return careers.map((career, index) => {
-      const startDate = new Date(career.start_date)
-        .toLocaleDateString("en-GB", {
-          month: "short",
-          year: "numeric",
-        })
-        .replace(" ", ". ");
-      const endDate =
-        career.end_date &&
-        new Date(career.end_date)
-          .toLocaleDateString("en-GB", {
-            month: "short",
-            year: "numeric",
-          })
-          .replace(" ", ". ");
+      const startDate = dateFormatMonthYear(career.start_date);
+      const endDate = career.end_date && dateFormatMonthYear(career.end_date);
       return (
         <div
           className="flex flex-col justify-start my-4"
