@@ -2,17 +2,20 @@
 
 import Image from "next/image";
 import certificates from "./certificates.json";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
 import { dateFormatMonthYear } from "@/app/utils";
+import { usePathname } from "next/navigation";
+import Back from "@/app/_components/Back";
+const HOME_PAGE_PATH = "/";
 
 export default function Cerificates() {
-  const [showAll, setShowAll] = useState<boolean>(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === HOME_PAGE_PATH;
 
   const handleShowAll = () => {
     sendGAEvent("event", "click", { context: "certificates.show_more" });
-    setShowAll((prev) => !prev);
   };
 
   const renderCertificates = () => {
@@ -21,7 +24,7 @@ export default function Cerificates() {
       return (
         <Link
           href={certificate.link}
-          className={index < 4 || showAll ? "block" : "hidden"}
+          className={index < 4 || !isHomePage ? "block" : "hidden"}
           target="_blank"
           rel={"noreferrer noopener"}
           key={`certificates-${index}`}
@@ -35,20 +38,23 @@ export default function Cerificates() {
             });
           }}
         >
-          <li className={"flex flex-col justify-start my-4"}>
+          <li className={"flex flex-row items-center my-4"}>
+            <div className={"mr-2"}>
+              <Image
+                alt={certificate.title}
+                src={certificate.src}
+                width={80}
+                height={0}
+              />
+            </div>
+            <div className="flex flex-col justify-start">
+
             <h2 className="font-medium text-xl w-fit">{certificate.title}</h2>
             <div>
               <span>
                 {certificate.issued_by} | {issueDate}
               </span>
             </div>
-            <div>
-              <Image
-                alt={certificate.title}
-                src={certificate.src}
-                width={330}
-                height={255}
-              />
             </div>
           </li>
         </Link>
@@ -58,22 +64,33 @@ export default function Cerificates() {
 
   return (
     <div className="xl:p-6 p-4  flex flex-col justify-center items-center">
+    {!isHomePage && (
+      <Back
+        onClick={() => {
+          sendGAEvent("event", "click", {
+            context: "certificates.back",
+          });
+        }}
+      />
+    )}
       <h1 className="text-txt-dark mb-4 text-4xl pb-4 border-b-4 px-4 w-fit border-txt-dark text-center">
         Licenses & Certificates
       </h1>
 
-      <ul className="list-none grid md:grid-cols-2 xl:grid-cols-4 grid-cols-1  grid-flow-row gap-y-4 gap-x-16">
+      <ul className="list-none grid md:grid-cols-2 grid-cols-1  grid-flow-row gap-y-4 gap-x-16">
         {renderCertificates()}
       </ul>
-      <div
-        className={
-          "text-txt-dark mb-4 pb-1 border-b-4 px-4 w-fit border-txt-dark cursor-pointer hover:opacity-75 hover:transition-all delay-150 " +
-          (showAll ? "hidden" : "block")
-        }
-        onClick={handleShowAll}
-      >
-        Show All
-      </div>
+      {isHomePage && (
+        <Link
+          href={"/certificates"}
+          className={
+            "text-txt-dark mb-4 pb-1 border-b-4 px-4 w-fit border-txt-dark cursor-pointer mt-4 hover:opacity-75 hover:transition-all delay-150"
+          }
+          onClick={handleShowAll}
+        >
+          Check Certificates
+        </Link>
+      )}
     </div>
   );
 }
