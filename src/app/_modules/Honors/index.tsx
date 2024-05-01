@@ -5,7 +5,7 @@ export default function Honors() {
       <h1 className="text-txt-dark text-4xl mb-4 pb-4 border-b-4 px-4 w-fit border-txt-dark">
         Honors
       </h1>
-      <ul className="list-disc">
+      <ul className="list-disc my-4">
         {honors.map((data, index) => {
           return (
             <li

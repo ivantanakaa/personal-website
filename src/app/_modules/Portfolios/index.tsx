@@ -101,7 +101,7 @@ export default function Portfolios() {
         {renderTitle()}
       </h1>
 
-      <ul className="list-none gap-y-4 gap-x-16">{renderPortfolios()}</ul>
+      <ul className="list-none gap-y-4 gap-x-16 my-4">{renderPortfolios()}</ul>
       {isHomePage && (
         <Link
           href={"/portfolios"}

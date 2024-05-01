@@ -38,7 +38,7 @@ export default function Cerificates() {
             });
           }}
         >
-          <li className={"flex flex-row items-center my-4"}>
+          <li className={"flex flex-row items-center"}>
             <div className={"mr-2"}>
               <Image
                 alt={certificate.title}
@@ -77,7 +77,7 @@ export default function Cerificates() {
         Licenses & Certificates
       </h1>
 
-      <ul className="list-none grid md:grid-cols-2 grid-cols-1  grid-flow-row gap-y-4 gap-x-16">
+      <ul className="list-none grid md:grid-cols-2 grid-cols-1  grid-flow-row gap-y-4 gap-x-16 my-4">
         {renderCertificates()}
       </ul>
       {isHomePage && (
