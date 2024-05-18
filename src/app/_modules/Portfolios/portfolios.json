@@ -3,8 +3,8 @@
     "name": "Tasks Trackerry",
     "alt": "tasks trackerry",
     "link": {
-      "url": "https://taskstrackerry.vercel.app/",
-      "text": "https://taskstrackerry.vercel.app/"
+      "url": "https://tasks-trackerry.vercel.app/",
+      "text": "tasks-trackerry.vercel.app"
     },
     "src": "/assets/images/portfolios/tasks_trackerry.png",
     "description": "Task Trackerry is a <strong>simple to-do-list project</strong> I create for myself. It&apos;s a simple to-do-list which you could input the task priority. The data is currently being stored in local storage in browser. It&apos;s develop using <strong>Next.js and Tailwind.</strong>",
@@ -15,7 +15,7 @@
     "alt": "ayovest",
     "link": {
       "url": "https://www.ayovest.id/",
-      "text": "https://www.ayovest.id/"
+      "text": "ayovest.id"
     },
     "src": "/assets/images/portfolios/ayovest.png",
     "description": "I developed a mutual fund investment application and web platform using <strong>Next.js and Vue.js</strong>. In my role, I coordinated with vendors and stakeholders as the IT representative. Additionally, I refactored legacy code using <strong>Next.js</strong> to improve performance and maintainability.",
@@ -33,7 +33,7 @@
     "alt": "bibit",
     "link": {
       "url": "https://www.bibit.id/",
-      "text": "https://www.bibit.id/"
+      "text": "bibit.id"
     },
     "src": "/assets/images/portfolios/bibit.png",
     "description": "Bibit is an <strong>investment company</strong> based in Indonesia. As a remote company, I am challenged to strengthen my communication as most of our teams collaborated from different location. I am in charge with several projects, the most significant might be <strong>Bibit Institution.</strong> It&apos;s an <strong>mutual fund investment targeted for a corporate.</strong>",
@@ -44,7 +44,7 @@
     "alt": "topremit",
     "link": {
       "url": "https://topremit.com/en",
-      "text": "https://topremit.com/en"
+      "text": "topremit.com"
     },
     "src": "/assets/images/portfolios/topremit.png",
     "description": "Topremit is a <strong>remittance startup company</strong> based in Medan. In case you are unfamiliar with the word, Remittance means sending money abroad. In this company I got the chance to utilized <strong>React.js and Next.js</strong>. I also got the chance to contributed building the business sections and experiencing creating Authorization and Authentication with the teams.",
@@ -55,7 +55,7 @@
     "alt": "artech",
     "link": {
       "url": "http://bit.ly/ArtechApps",
-      "text": "http://bit.ly/ArtechApps"
+      "text": "Artech Playstore"
     },
     "src": "/assets/images/portfolios/artech.png",
     "description": "Artech is an <strong>electronics selling company.</strong> I was asked to create a membership points application using <strong>React Native</strong> as the frameworks. We used <strong>Firebase notification</strong> for the notification and <strong>JWT-token for the Authentication</strong>. In this project I got the chance to create the mockup apps prototype using <strong>Figma.</strong>",
@@ -66,7 +66,7 @@
     "alt": "membee",
     "link": {
       "url": "http://bit.ly/MembeeApps",
-      "text": "http://bit.ly/MembeeApps"
+      "text": "Membee Video"
     },
     "src": "/assets/images/portfolios/membee.png",
     "description": "Membee is a <strong>food ordering system</strong> I created for my final project. It let user to order food and reserve a table from their phone. I used <strong>Laravel</strong> for the backend and <strong>Flutter</strong> for the mobile apps. I got the chance to experience Xendit (A Payment Gateway) for the payment method.",
@@ -77,7 +77,7 @@
     "alt": "aminin",
     "link": {
       "url": "http://bit.ly/AmininApps",
-      "text": "http://bit.ly/AmininApps"
+      "text": "Aminin Playstore"
     },
     "src": "/assets/images/portfolios/aminin.png",
     "description": "Aminin is the second project I contributed in Bahaso. It's an apps about <strong>Arabic e-learning.</strong> I got the chance to learn about <strong>Deeplink, Geolocator, and experience more of Flutter framework</strong>. Not to mention I learnt a lot about Arabic languages and cultures in the process which made this experience more exciting!",
@@ -88,7 +88,7 @@
     "alt": "bahaso",
     "link": {
       "url": "http://bit.ly/BahasoApps",
-      "text": "http://bit.ly/BahasoApps"
+      "text": "Bahaso Playstore"
     },
     "src": "/assets/images/portfolios/bahaso.png",
     "description": "Bahaso is an <strong>e-learning startup</strong> company based in Jakarta. I was asked to continue their projects while using <strong>Flutter</strong> framework. It's a really exciting experience, as they let me to build a Flutter module from the start, finding a better <strong>state management</strong> for the project, we choose Provider after some research.",
