@@ -23,9 +23,9 @@ function HomePage() {
       <Skills />
       <Careers />
       <Educations />
-      <Honors />
       <Portfolios />
       <Cerificates />
+      <Honors />
       <Footer />
     </div>
   );
