@@ -6,7 +6,7 @@ import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Hero() {
   return (
-    <div className="md:p-12 p-8 flex flex-col md:flex-row justify-center gap-2 items-center mx-4">
+    <section className="md:p-12 p-8 flex flex-col md:flex-row justify-center gap-2 items-center mx-4">
       <h1 className=" text-4xl md:mb-0 mb-4 text-center border-[#3d3d3d] md:border-r-4 md:pr-4">
         Hi, I&apos;m
         <div className="text-6xl mt-4">
@@ -55,6 +55,6 @@ export default function Hero() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

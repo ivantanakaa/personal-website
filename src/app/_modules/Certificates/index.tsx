@@ -89,7 +89,7 @@ export default function Cerificates() {
   };
 
   return (
-    <div className="xl:p-6 p-4  flex flex-col justify-center items-center mx-4">
+    <section className="xl:p-6 p-4  flex flex-col justify-center items-center mx-4">
       {!isHomePage && (
         <Back
           onClick={() => {
@@ -117,6 +117,6 @@ export default function Cerificates() {
           Check Certificates
         </Link>
       )}
-    </div>
+    </section>
   );
 }

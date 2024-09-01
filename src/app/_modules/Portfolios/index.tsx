@@ -87,7 +87,7 @@ export default function Portfolios() {
   };
 
   return (
-    <div className="xl:p-6 p-4 flex flex-col justify-center items-center w-full my-8">
+    <section className="xl:p-6 p-4 flex flex-col justify-center items-center w-full my-8">
       {!isHomePage && (
         <Back
           onClick={() => {
@@ -113,6 +113,6 @@ export default function Portfolios() {
           Explore My Portfolio
         </Link>
       )}
-    </div>
+    </section>
   );
 }
