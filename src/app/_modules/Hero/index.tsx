@@ -9,8 +9,11 @@ export default function Hero() {
     <div className="md:p-12 p-8 flex flex-col md:flex-row justify-center gap-2 items-center">
       <h1 className=" text-4xl md:mb-0 mb-4 text-center border-[#3d3d3d] md:border-r-4 md:pr-4">
         Hi, I&apos;m
-        <div className="text-6xl mt-4">Ivan Tanaka</div>
-        <div className="mt-4"> Software Engineer</div>
+        <div className="text-6xl mt-4">
+          Ivan Tanaka
+        </div>
+          <span className="text-2xl cursor-help" title="Chényùfán"> (陈裕凡)</span>
+        <div className="mt-3"> Software Engineer</div>
       </h1>
       {/* <p className="text-txt-light xl:w-1/2 mb-4">
         A seasoned web engineer with five years of hands-on experience.
