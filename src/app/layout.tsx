@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <meta
           name="description"
-          content="A seasoned web engineer with five years of hands-on experience. Proficient in an array of cutting-edge technologies and frameworks, including React, Typescript, Laravel, Next.js, and Flutter, I bring a wealth of expertise to every project."
+          content={`A seasoned software engineer with ${years_of_experience} years of hands-on experience. Proficient in an array of cutting-edge technologies and frameworks, including React, Typescript, Laravel, Next.js, and Flutter, I bring a wealth of expertise to every project.`}
         />
         <meta
           name="keywords"
