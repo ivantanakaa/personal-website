@@ -40,7 +40,7 @@ export default function Educations() {
     });
   };
   return (
-    <div className="xl:p-6 p-4 flex flex-col justify-center items-center">
+    <div className="xl:p-6 p-4 flex flex-col justify-center items-center mx-4">
       <h1 className="text-txt-dark mb-4 text-4xl pb-4 border-b-4 px-4 w-fit border-txt-dark">
         Educations
       </h1>
