@@ -1,16 +1,16 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
 
 const years_of_experience = new Date().getFullYear() - 2018;
 
-export const metadata: Metadata = {
-  description: `Ivan Tanaka - A seasoned Software Engineer with ${years_of_experience} years of hands-on experience.`,
-};
+// export const metadata: Metadata = {
+//   description: `Ivan Tanaka - A seasoned Software Engineer with ${years_of_experience} years of hands-on experience.`,
+// };
 
 export default function RootLayout({
   children,
@@ -22,11 +22,11 @@ export default function RootLayout({
       <head>
         <meta
           name="description"
-          content={`A seasoned software engineer with ${years_of_experience} years of hands-on experience. Proficient in an array of cutting-edge technologies and frameworks, including React, Typescript, Laravel, Next.js, and Flutter, I bring a wealth of expertise to every project.`}
+          content={`A seasoned software engineer with ${years_of_experience} years of hands-on experience. Proficient in an array of cutting-edge technologies and frameworks, including React, Typescript, Laravel, Next.js, and Flutter.`}
         />
         <meta
           name="keywords"
-          content="React.js, Next.js , Flutter, Laravel, Typescript, Vue.js, Tailwind, Web Engineer, Web Developer, Frontend Engineer, Frontend Developer, Software Engineer, Software Developer"
+          content="React.js, Next.js , Flutter, Laravel, Typescript, Vue.js, Tailwind, Web Engineer, Web Developer, Frontend Engineer, Frontend Developer, Software Engineer, Software Developer, Ivan Tanaka"
         ></meta>
         <meta
           name="viewport"
