@@ -114,7 +114,7 @@ export default function Cerificates() {
           }
           onClick={handleShowAll}
         >
-          Check Certificates
+          See All Certificates
         </Link>
       )}
     </section>
