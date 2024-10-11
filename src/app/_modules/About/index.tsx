@@ -3,7 +3,7 @@ export default function About() {
   return (
     <section className="flex justify-center my-4 mx-4">
       <div className="text-justify max-w-[700px] border-[#3d3d3d] border-y-4 py-2 px-2">
-        I&apos;m a <strong>software engineer</strong> with{" "}
+        I&apos;m a <strong>software engineer specialist</strong> with{" "}
         <strong>{years_of_experience} years of experience</strong>, specializing
         in <strong>HTML, CSS, and JavaScript.</strong> My expertise extends to
         working with{" "}
