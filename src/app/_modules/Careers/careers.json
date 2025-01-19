@@ -1,10 +1,21 @@
 [
   {
+    "corporate": "Central Mega Kencana",
+    "position": "IT Developer Specialist",
+    "corporate_link": "https://centralmegakencana.com/",
+    "start_date": "2024/10",
+    "end_date": null,
+    "jobs": [
+      "In charge of developing and maintaining e-commerce website using <strong>Next.js, Tailwind CSS</strong> and <strong>Go.</strong>",
+      "Develop a design system for admin site using <strong>React.js and Styled Components,</strong> ensuring consistency and high-quality user experience."
+    ]
+  },
+  {
     "corporate": "Ayovest",
     "position": "Web Developer Specialist",
     "corporate_link": "https://www.ayovest.id/",
     "start_date": "2023/12",
-    "end_date": null,
+    "end_date": "2024/10",
     "jobs": [
       "Develop mutual fund investment application and web using <strong>Next.js</strong> and <strong>Vue.js.</strong>",
       "In charge for coordinating with vendor and stakeholder as an IT representative.",
