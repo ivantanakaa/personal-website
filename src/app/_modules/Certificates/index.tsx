@@ -42,10 +42,8 @@ export default function Cerificates() {
           onClick={() => {
             sendGAEvent("event", "click", {
               context: "certificates",
-              value: {
-                title: certificate.title,
-                issued_by: certificate.issued_by,
-              },
+              title: certificate.title,
+              issued_by: certificate.issued_by,
             });
           }}
         >
