@@ -1,12 +1,27 @@
-[
-  "React.js",
-  "Next.js",
-  "Typescript",
-  "Go",
-  "Flutter",
-  "Laravel",
-  "Tailwind",
-  "Vue.js",
-  "Git",
-  "Figma"
-]
+{
+  "Frontend Development": [
+    "React",
+    "Next.js",
+    "Vue.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "React Query",
+    "Flutter",
+    "React Native"
+  ],
+  "Backend Development": [
+    "Go",
+    "Laravel",
+    "MySQL",
+    "PostgreSQL"
+  ],
+  "Tools & Workflow": [
+    "Git",
+    "NPM",
+    "Figma",
+    "Google Analytics",
+    "Notion",
+    "Atlassian",
+    "Monday"
+  ]
+}
