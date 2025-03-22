@@ -1,5 +1,9 @@
 import { Metadata } from "next";
-import Download from "../_components/Download";
+import dynamic from "next/dynamic";
+const Download = dynamic(() => import("../_components/Download"), {
+  ssr: false,
+});
+
 import Footer from "../_components/Footer";
 import Portfolios from "../_modules/Portfolios";
 
