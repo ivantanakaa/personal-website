@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import contacts from "../../_components/contacts.json";
@@ -15,18 +16,6 @@ export default function Hero() {
           <span className="text-2xl cursor-help" title="Chényùfán"> (陈裕凡)</span>
         <div className="mt-3"> Software Engineer</div>
       </h1>
-      {/* <p className="text-txt-light xl:w-1/2 mb-4">
-        A seasoned web engineer with five years of hands-on experience.
-        Proficient in an array of cutting-edge technologies and frameworks,
-        including React, Typescript, Laravel, Next.js, and Flutter, I bring a
-        wealth of expertise to every project.
-      </p>
-      <p className="text-txt-light xl:w-1/2">
-        My passion lies in creating seamless and user-centric digital
-        experiences. I am always eager to collaborate on exciting new ventures,
-        so feel free to reach out and connect with me!
-      </p> */}
-
       <div className="flex gap-2 w-fit border-t-4 pt-4 md:pt-0 md:border-t-0 px-2 h-100 border-[#3d3d3d] flex-col justify-center">
         {contacts.map((contact, index) => {
           return (

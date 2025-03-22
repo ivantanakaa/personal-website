@@ -1,5 +1,9 @@
+"use client";
+
 import { dateFormatYear } from "@/app/utils";
 import educations from "./educations.json";
+import Link from "next/link";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Educations() {
   const renderEducations = () => {
@@ -11,8 +15,20 @@ export default function Educations() {
           className="flex flex-col justify-start my-4"
           key={`education-${index}`}
         >
-          <h2 className=" font-medium text-2xl mb-2 w-fit">
-            {education.university}
+          <h2 className="font-medium text-2xl mb-2 w-fit ">
+            <Link
+              className="text-blue-500 hover:text-blue-700 hover:transition-all delay-150"
+              href={education.link}
+              target={"_blank"}
+              rel={"noreferrer noopener"}
+              onClick={() => {
+                sendGAEvent("event", "click", {
+                  context: "education",
+                });
+              }}
+            >
+              {education.university}
+            </Link>
           </h2>
           <div>
             <span>
