@@ -6,10 +6,13 @@
     "start_date": "2024/10",
     "end_date": null,
     "jobs": [
-      "In charge of developing and maintaining e-commerce website using <strong>Next.js, Tailwind CSS</strong> and <strong>Go.</strong>",
-      "Develop a design system for admin site using <strong>React.js and Styled Components,</strong> ensuring consistency and high-quality user experience.",
-      "Responsible for developing and delivering an engraving activity system for <i>Frank & Co. and Maudy Ayunda</i> collaboration event within a tight timeframe.",
-      "Optimizing our e-commerce platform for search engines."
+      "Developing and maintaining the e-commerce website using <strong>Next.js, Tailwind CSS,</strong> and <strong>Go</strong> to ensure <strong>scalability and performance</strong>.",
+      "Building a design system for the admin site with <strong>React.js</strong> and <strong>Styled Components</strong>, ensuring <strong>consistency and a high-quality user experience</strong>.",
+      "Delivering an engraving activity system for the <i>Frank & Co. x Maudy Ayunda</i> collaboration event within a <strong>tight timeframe</strong>.",
+      "Enhancing <strong>SEO performance</strong> by working closely with the marketing team, utilizing <strong>Google Analytics</strong>, sitemaps, and <strong>robots.txt</strong> for <strong>better search visibility</strong>.",
+      "Initiated and developed a <strong>multi-brand management system</strong> using <strong>Go and Next.js</strong> to streamline operations across all company brands.",
+      "Implemented database migrations with <strong>Goose</strong> for efficient schema versioning and data integrity.",
+      "Integrated the in-house design system to ensure <strong>consistency and scalability</strong> across brand platforms."
     ]
   },
   {
@@ -19,16 +22,16 @@
     "start_date": "2023/12",
     "end_date": "2024/10",
     "jobs": [
-      "Develop mutual fund investment application and web using <strong>Next.js</strong> and <strong>Vue.js.</strong>",
-      "In charge for coordinating with vendor and stakeholder as an IT representative.",
-      "Refactoring legacy code using <strong>Next.js.</strong>",
-      "Assist UI/UX team while developing Financial Checkup module.",
-      "Initiate Documentation using Notion.",
-      "Initiate Design System Project.",
-      "Initiate Management tools using Atlassian.",
-      "Assisted the company in obtaining a <strong>Virtual Account</strong> by adhering to SNAP BI regulations.",
-      "Ensured the company's registration and supervision compliance with <strong>OJK</strong> regulations.",
-      "Developed an email blasting system using <strong>Google Script</strong> to streamline customer service operations."
+      "Developed a mutual fund investment application and web using <strong>Next.js</strong> and <strong>Vue.js</strong>.",
+      "Acted as the IT representative, coordinating with vendors and stakeholders to <strong>streamline communication</strong>.",
+      "Refactored legacy code using <strong>Next.js</strong> for <strong>improved performance and maintainability</strong>.",
+      "Collaborated with the UI/UX team in developing the <i>Financial Checkup</i> module.",
+      "Initiated documentation using <strong>Notion</strong> for <strong>better knowledge management</strong>.",
+      "Started a <strong>Design System</strong> project to ensure <strong>consistency across platforms</strong>.",
+      "Implemented <strong>management tools</strong> using <strong>Atlassian</strong> to improve <strong>workflow efficiency</strong>.",
+      "Facilitated the company in obtaining a <strong>Virtual Account</strong> by ensuring compliance with <strong>SNAP BI</strong> regulations.",
+      "Ensured <strong>OJK compliance</strong> for registration and supervision regulations.",
+      "Developed an <strong>email blasting system</strong> using <strong>Google Script</strong> to <strong>streamline customer service operations</strong>."
     ]
   },
   {
@@ -38,12 +41,12 @@
     "start_date": "2022/05",
     "end_date": "2023/10",
     "jobs": [
-      "Develop mutual fund investment ecosystem application and web using <strong>React.js.</strong>",
-      "In charge for developing <i>Bibit Institution</i> an investment product for institutional clients.",
-      "In charge for developing a filter system for Top Product.",
-      "Develop a webpage for institutional product using <strong>Next.js.</strong>",
-      "Develop a stamp duty payment feature.",
-      "Daily bug fixing and analytics implementation to ensure software reliability."
+      "Engineered a <strong>mutual fund investment ecosystem</strong> for web and mobile using <strong>React.js</strong>, improving scalability and performance.",
+      "Led the development of <i>Bibit Institution</i>, an <strong>investment platform for institutional clients</strong>, expanding market reach.",
+      "Designed and implemented a <strong>filter system</strong> for <i>Top Product</i>, enhancing product discoverability and user experience.",
+      "Developed an <strong>institutional product webpage</strong> using <strong>Next.js</strong>, optimizing page load speeds and SEO.",
+      "Implemented a <strong>stamp duty payment feature</strong> to automate tax compliance for transactions.",
+      "Maintained system stability through <strong>daily bug fixes</strong> and <strong>analytics-driven optimizations</strong>."
     ]
   },
   {
@@ -53,11 +56,11 @@
     "start_date": "2021/01",
     "end_date": "2022/03",
     "jobs": [
-      "Develop remittance ecosystem for mobile and web using <strong>React.js, React Native and Next.js.</strong>",
-      "Develop webpage for company profile using <strong>React.js.</strong>",
-      "Develop <i>Topremit for Business</i>, a remittance service for corporate clients, using <strong>Next.js.</strong>",
-      "Develop OTP phone verification for sign in process.",
-      "Daily bug fixing to maintain software functionality."
+      "Developed a <strong>remittance ecosystem</strong> for mobile and web using <strong>React.js, React Native,</strong> and <strong>Next.js</strong>, streamlining cross-border transactions.",
+      "Built and optimized the company’s <strong>profile webpage</strong> using <strong>React.js</strong> for better engagement.",
+      "Developed <i>Topremit for Business</i>, a <strong>remittance platform for corporate clients</strong>, using <strong>Next.js</strong>.",
+      "Implemented an <strong>OTP-based phone verification</strong> system to enhance security for user authentication.",
+      "Ensured software reliability with proactive <strong>bug fixes</strong> and continuous optimizations."
     ]
   },
   {
@@ -67,10 +70,10 @@
     "start_date": "2019/06",
     "end_date": "2020/01",
     "jobs": [
-      "Using Scrum and Kanban (Scrumban).",
-      "Develop apps for languages e-learning using <strong>Flutter</strong> framework.",
-      "Apply MVVM and Provider for the state management.",
-      "Develop Arabic learning application using <strong>Flutter.</strong>"
+      "Developed <strong>language e-learning applications</strong> using <strong>Flutter</strong>, making learning more accessible.",
+      "Applied <strong>MVVM architecture</strong> with <strong>Provider</strong> for efficient state management and better performance.",
+      "Built an <strong>Arabic language learning app</strong> using <strong>Flutter</strong>, expanding Bahaso’s course offerings.",
+      "Worked in an <strong>Agile team</strong> following <strong>Scrum and Kanban (Scrumban)</strong> methodologies to improve development efficiency."
     ]
   },
   {
@@ -80,9 +83,9 @@
     "start_date": "2018/08",
     "end_date": "2019/04",
     "jobs": [
-      "Backend developer specializing in <strong>Laravel.</strong>",
-      "Experienced in <strong>RESTful API, MVC architecture, and database design.</strong>",
-      "Developing <i>marketplace backoffice system</i>."
+      "Developed and maintained backend systems using <strong>Laravel</strong>, ensuring smooth business operations.",
+      "Designed and optimized <strong>RESTful APIs</strong>, following <strong>MVC architecture</strong> and best database practices.",
+      "Built a <strong>marketplace back-office system</strong> to streamline inventory and order management."
     ]
   }
 ]
