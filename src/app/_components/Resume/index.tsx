@@ -1,6 +1,5 @@
 import About from "@/app/_modules/About";
 import Careers from "@/app/_modules/Careers";
-import Hero from "@/app/_modules/Hero";
 import ResumeHero from "@/app/_modules/Hero/ResumeHero";
 import Honors from "@/app/_modules/Honors";
 import ResumePortfolios from "@/app/_modules/Portfolios/ResumePortfolios";
