@@ -11,7 +11,8 @@
       "Delivering an engraving activity system for the <i>Frank & Co. x Maudy Ayunda</i> collaboration event within a <strong>tight timeframe</strong>.",
       "Enhancing <strong>SEO performance</strong> by working closely with the marketing team, utilizing <strong>Google Analytics</strong>, sitemaps, and <strong>robots.txt</strong> for <strong>better search visibility</strong>.",
       "Initiated and developed a <strong>multi-brand management system</strong> using <strong>Go and Next.js</strong> to streamline operations across all company brands.",
-      "Implemented database migrations with <strong>Goose</strong> for efficient schema versioning and data integrity."
+      "Implemented database migrations with <strong>Goose</strong> ensuring efficient schema versioning and data integrity.",
+      "Integrated <strong><i>Qontak by Mekari</i></strong> APIs - A WhatsApp message notification service - using <strong>Go</strong>."
     ]
   },
   {
