@@ -1,10 +1,7 @@
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
-const Download = dynamic(() => import("../_components/Download"), {
-  ssr: false,
-});
 import Footer from "../_components/Footer";
 import Certificates from "../_modules/Certificates";
+import Download from "../_components/Download";
 
 export const metadata: Metadata = {
   title: "Certificates",

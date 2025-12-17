@@ -8,12 +8,8 @@ import Portfolios from "./_modules/Portfolios";
 import Recommendations from "./_modules/Recommendations";
 import Cerificates from "./_modules/Certificates";
 import Footer from "./_components/Footer";
-import dynamic from "next/dynamic";
-const Download = dynamic(() => import("./_components/Download"), {
-  ssr: false, // Prevents SSR issues
-});
-
 import { Metadata } from "next";
+import Download from "./_components/Download";
 
 export const metadata: Metadata = {
   title: "Home",

@@ -1,16 +1,18 @@
 "use client";
+
 import { sendGAEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useRef } from "react";
 import Resume from "../Resume";
-import html2pdf from "html2pdf.js";
-
 
 export default function Download() {
-  const resumeRef = useRef(null);
+  const resumeRef = useRef<HTMLDivElement | null>(null);
 
-  const handleOnClickDownload = () => {
-    const element = resumeRef.current;
+  const handleOnClickDownload = async () => {
+    if (!resumeRef.current) return;
+
+    const html2pdf = (await import("html2pdf.js")).default;
+
     const options = {
       margin: 5,
       filename: "Ivan_Tanaka_Resume.pdf",
@@ -19,11 +21,9 @@ export default function Download() {
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       pagebreak: { mode: ["avoid-all", "legacy"] },
     };
-  
-    if (element) {
-      sendGAEvent("event", "click", { context: "download_resume" });
-      html2pdf().set(options).from(element).save();
-    }
+
+    sendGAEvent("event", "click", { context: "download_resume" });
+    html2pdf().set(options).from(resumeRef.current).save();
   };
 
   return (
@@ -33,7 +33,7 @@ export default function Download() {
       </div>
 
       <button
-        className="bg-[#3d3d3d] rounded-full p-2 md:px-4 flex flex-row items-center hover:opacity-75 hover:transition-all delay-150"
+        className="bg-[#3d3d3d] rounded-full p-2 md:px-4 flex flex-row items-center hover:opacity-75 transition-all"
         onClick={handleOnClickDownload}
       >
         <Image
