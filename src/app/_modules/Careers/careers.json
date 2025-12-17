@@ -14,7 +14,8 @@
       "Implemented database migrations with <strong>Goose</strong> ensuring efficient schema versioning and data integrity.",
       "Integrated <strong><i>Qontak by Mekari</i></strong> APIs - A WhatsApp message notification service - using <strong>Go</strong>.",
       "Integrated <strong>CI/CD pipelines</strong> into several projects using tools like <strong>GitHub Actions</strong> and <strong>Docker</strong> to automate testing, streamline deployment, and improve development workflows.",
-      "Implemented <strong>HTTP-only cookies</strong> to enhance <strong>security and protect sensitive data</strong> from client-side access."
+      "Implemented <strong>HTTP-only cookies</strong> to enhance <strong>security and protect sensitive data</strong> from client-side access.",
+      "Rebuilt multi-brand e-commerce platforms for Indonesia’s leading diamond jewelry retailer to support scalable and maintainable commerce capabilities."
     ]
   },
   {
