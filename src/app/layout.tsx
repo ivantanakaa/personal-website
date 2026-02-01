@@ -1,16 +1,42 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
 const years_of_experience = new Date().getFullYear() - 2018;
 
-// export const metadata: Metadata = {
-//   description: `Ivan Tanaka - A seasoned Software Engineer with ${years_of_experience} years of hands-on experience.`,
-// };
+// Modern Next.js Metadata API
+export const metadata: Metadata = {
+  title: "Ivan Tanaka | Software Engineer",
+  description: `A seasoned software engineer specialist with ${years_of_experience} years of hands-on experience. Proficient in React, Typescript, Laravel, Next.js, and Go.`,
+  keywords: "React.js, Next.js, Flutter, Laravel, Typescript, Go, Tailwind, Software Engineer, Ivan Tanaka",
+  authors: [{ name: "Ivan Tanaka" }],
+  openGraph: {
+    title: "Ivan Tanaka | Software Engineer",
+    description: "Building impactful solutions with 8 years of engineering expertise.",
+    url: "https://ivantanakaa.vercel.app",
+    siteName: "Ivan Tanaka Portfolio",
+    images: [
+      {
+        url: "/assets/images/og-image.png",
+        width: 1200,
+        height: 1200,
+        alt: "Ivan Tanaka Software Engineer Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ivan Tanaka | Software Engineer",
+    description: "Building impactful solutions with 8 years of engineering expertise.",
+    images: ["/og-image.png"],
+  },
+  viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+};
 
 export default function RootLayout({
   children,
@@ -18,24 +44,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <meta
-          name="description"
-          content={`A seasoned software engineer specialist with ${years_of_experience} years of hands-on experience. Proficient in an array of cutting-edge technologies and frameworks, including React, Typescript, Laravel, Next.js, and Flutter.`}
-        />
-        <meta
-          name="keywords"
-          content="React.js, Next.js , Flutter, Laravel, Typescript, Vue.js, Tailwind, Web Engineer, Web Developer, Frontend Engineer, Frontend Developer, Software Engineer, Software Developer, Ivan Tanaka"
-        ></meta>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-        />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
-      <body className={inter.className}>{children}</body>
-      <GoogleAnalytics gaId="G-S6KXB9Y97V" />
+    <html lang="en" className="scroll-smooth">
+      <body className={inter.className}>
+        {children}
+        <GoogleAnalytics gaId="G-S6KXB9Y97V" />
+      </body>
     </html>
   );
 }
