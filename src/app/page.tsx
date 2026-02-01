@@ -31,9 +31,11 @@ export default function ResumePage() {
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-900/10 blur-[120px] -z-10 rounded-full print:hidden" />
           <div className="max-w-3xl">
             <h1 className="text-6xl font-extrabold tracking-tight mb-8 leading-tight text-white print:text-black print:text-4xl">
-              Software Engineer <br />
+              Ivan Tanaka
+                <br />
               <span className="bg-gradient-to-r from-amber-200 via-amber-500 to-amber-700 bg-clip-text text-transparent print:bg-none print:text-amber-600 accent-text">
-                Impactful Solutions.
+                
+              Impactful Solutions.<br />
               </span>
             </h1>
             <div className="space-y-6 text-lg text-slate-400 leading-relaxed print:text-slate-800 print:text-sm">
@@ -132,13 +134,21 @@ export default function ResumePage() {
                   className="inline-flex items-center gap-1.5 text-amber-600 font-bold mb-4 hover:text-amber-400 transition-colors duration-300 print:text-amber-700"
                 >
                   @{exp.corporate}
-                  <ExternalLink size={14} className="opacity-50 group-hover:opacity-100" />
+                  <ExternalLink
+                    size={14}
+                    className="opacity-50 group-hover:opacity-100"
+                  />
                 </a>
 
                 <ul className="grid gap-3">
                   {exp.jobs.map((job, jIdx) => (
-                    <li key={jIdx} className="text-slate-400 text-sm leading-relaxed flex gap-3 print:text-slate-700">
-                      <span className="text-slate-700 group-hover:text-amber-600 mt-1.5 font-bold">•</span>
+                    <li
+                      key={jIdx}
+                      className="text-slate-400 text-sm leading-relaxed flex gap-3 print:text-slate-700"
+                    >
+                      <span className="text-slate-700 group-hover:text-amber-600 mt-1.5 font-bold">
+                        •
+                      </span>
                       <span dangerouslySetInnerHTML={{ __html: job }} />
                     </li>
                   ))}
@@ -156,7 +166,10 @@ export default function ResumePage() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {portfolios.map((project, idx) => {
-                const projectUrl = typeof project.link === "object" ? project.link.url : project.link;
+                const projectUrl =
+                  typeof project.link === "object"
+                    ? project.link.url
+                    : project.link;
                 const hasLink = !!projectUrl;
 
                 return (
@@ -166,7 +179,11 @@ export default function ResumePage() {
                     target={hasLink ? "_blank" : undefined}
                     rel="noopener noreferrer"
                     className={`group relative bg-slate-900/20 border border-slate-800/50 rounded-xl p-1 transition-all duration-500 block
-                      ${hasLink ? "hover:border-amber-500/30 hover:-translate-y-2 cursor-pointer" : "cursor-default opacity-80 pointer-events-none"}`}
+                      ${
+                        hasLink
+                          ? "hover:border-amber-500/30 hover:-translate-y-2 cursor-pointer"
+                          : "cursor-default opacity-80 pointer-events-none"
+                      }`}
                   >
                     <div className="bg-slate-950 p-6 rounded-lg h-full flex flex-col relative overflow-hidden">
                       {hasLink && (
@@ -177,10 +194,18 @@ export default function ResumePage() {
                       <h3 className="text-lg font-bold text-white mb-3 group-hover:text-amber-400">
                         {project.name}
                       </h3>
-                      <p className="text-slate-500 text-xs mb-6 line-clamp-3 leading-relaxed group-hover:text-slate-300" dangerouslySetInnerHTML={{ __html: project.description }} />
+                      <p
+                        className="text-slate-500 text-xs mb-6 line-clamp-3 leading-relaxed group-hover:text-slate-300"
+                        dangerouslySetInnerHTML={{
+                          __html: project.description,
+                        }}
+                      />
                       <div className="flex flex-wrap gap-2 mt-auto">
                         {project.tags.map((tag) => (
-                          <span key={tag} className="text-[9px] font-bold text-slate-400 border border-slate-800 px-2 py-0.5 rounded uppercase group-hover:text-amber-500/80">
+                          <span
+                            key={tag}
+                            className="text-[9px] font-bold text-slate-400 border border-slate-800 px-2 py-0.5 rounded uppercase group-hover:text-amber-500/80"
+                          >
                             {tag}
                           </span>
                         ))}
@@ -198,15 +223,24 @@ export default function ResumePage() {
           <div className="break-inside-avoid">
             <div className="flex items-center gap-2 mb-8 text-amber-500/80">
               <GraduationCap size={24} />
-              <h2 className="text-xl font-bold text-white print:text-black">Education</h2>
+              <h2 className="text-xl font-bold text-white print:text-black">
+                Education
+              </h2>
             </div>
             {educations.map((edu, idx) => (
               <div key={idx}>
-                <h3 className="font-bold text-lg text-white print:text-black">{edu.university}</h3>
-                <p className="text-amber-600 mb-4">{edu.degree} ({edu.start_date} - {edu.end_date})</p>
+                <h3 className="font-bold text-lg text-white print:text-black">
+                  {edu.university}
+                </h3>
+                <p className="text-amber-600 mb-4">
+                  {edu.degree} ({edu.start_date} - {edu.end_date})
+                </p>
                 <ul className="space-y-2">
                   {edu.achievements.map((ach, i) => (
-                    <li key={i} className="text-sm text-slate-400 flex gap-2 print:text-slate-700">
+                    <li
+                      key={i}
+                      className="text-sm text-slate-400 flex gap-2 print:text-slate-700"
+                    >
                       <span className="text-amber-900">•</span>
                       <span dangerouslySetInnerHTML={{ __html: ach }} />
                     </li>
@@ -218,11 +252,17 @@ export default function ResumePage() {
           <div className="break-inside-avoid">
             <div className="flex items-center gap-2 mb-8 text-amber-500/80">
               <Award size={24} />
-              <h2 className="text-xl font-bold text-white print:text-black">Honors & Mentoring</h2>
+              <h2 className="text-xl font-bold text-white print:text-black">
+                Honors & Mentoring
+              </h2>
             </div>
             <ul className="space-y-4">
               {honors.map((honor, idx) => (
-                <li key={idx} className="p-4 bg-slate-900/50 rounded-lg border-l-4 border-amber-600 text-slate-300 text-sm print:bg-slate-50 print:text-slate-800" dangerouslySetInnerHTML={{ __html: honor }} />
+                <li
+                  key={idx}
+                  className="p-4 bg-slate-900/50 rounded-lg border-l-4 border-amber-600 text-slate-300 text-sm print:bg-slate-50 print:text-slate-800"
+                  dangerouslySetInnerHTML={{ __html: honor }}
+                />
               ))}
             </ul>
           </div>
@@ -231,15 +271,32 @@ export default function ResumePage() {
         {/* CERTIFICATIONS */}
         <section className="py-24 border-t border-slate-900 bg-slate-950 print:bg-white print:py-8">
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="text-sm font-black text-amber-500/80 uppercase tracking-[0.3em] mb-12 print:mb-4">Verified Certifications</h2>
+            <h2 className="text-sm font-black text-amber-500/80 uppercase tracking-[0.3em] mb-12 print:mb-4">
+              Verified Certifications
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {certificates.map((cert, idx) => (
-                <a key={idx} href={cert.link} target="_blank" rel="noopener noreferrer" className="group p-4 md:p-6 border border-slate-800 rounded-2xl transition-all duration-300 hover:border-amber-500/50">
-                  <span className="text-[10px] font-black uppercase text-amber-400 bg-amber-400/10 px-2 py-1 rounded group-hover:bg-amber-400 group-hover:text-slate-950">{cert.issued_by}</span>
-                  <h3 className="text-sm font-bold text-slate-200 mt-2 md:mt-4 group-hover:text-white">{cert.title}</h3>
+                <a
+                  key={idx}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-4 md:p-6 border border-slate-800 rounded-2xl transition-all duration-300 hover:border-amber-500/50"
+                >
+                  <span className="text-[10px] font-black uppercase text-amber-400 bg-amber-400/10 px-2 py-1 rounded group-hover:bg-amber-400 group-hover:text-slate-950">
+                    {cert.issued_by}
+                  </span>
+                  <h3 className="text-sm font-bold text-slate-200 mt-2 md:mt-4 group-hover:text-white">
+                    {cert.title}
+                  </h3>
                   <div className="flex justify-between items-center mt-2 md:mt-6">
-                    <span className="text-[10px] text-slate-500 print:hidden">{cert.issue_date}</span>
-                    <ExternalLink size={12} className="text-amber-500 opacity-0 group-hover:opacity-100" />
+                    <span className="text-[10px] text-slate-500 print:hidden">
+                      {cert.issue_date}
+                    </span>
+                    <ExternalLink
+                      size={12}
+                      className="text-amber-500 opacity-0 group-hover:opacity-100"
+                    />
                   </div>
                 </a>
               ))}
@@ -248,12 +305,22 @@ export default function ResumePage() {
         </section>
 
         {/* CONTACT */}
-        <section id="contact" className="py-32 px-6 bg-slate-950 border-t border-slate-900 print:hidden">
+        <section
+          id="contact"
+          className="py-32 px-6 bg-slate-950 border-t border-slate-900 print:hidden"
+        >
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">Interested in working together?</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Interested in working together?
+            </h2>
             <div className="flex flex-wrap justify-center gap-4">
               {contacts.map((contact, idx) => (
-                <a key={idx} href={contact.link} target="_blank" className="flex items-center gap-3 px-6 py-3 bg-slate-900 border border-slate-800 rounded-full text-sm font-bold text-slate-300 hover:bg-amber-600 hover:text-white duration-300">
+                <a
+                  key={idx}
+                  href={contact.link}
+                  target="_blank"
+                  className="flex items-center gap-3 px-6 py-3 bg-slate-900 border border-slate-800 rounded-full text-sm font-bold text-slate-300 hover:bg-amber-600 hover:text-white duration-300"
+                >
                   {contact.alt === "whatsapp" && <Phone size={18} />}
                   {contact.alt === "github" && <Github size={18} />}
                   {contact.label}
@@ -266,8 +333,12 @@ export default function ResumePage() {
 
       <footer className="py-12 px-6 border-t border-slate-900 bg-black print:hidden opacity-40">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-xs font-mono text-white">IVAN TANAKA - Software Engineer</p>
-          <p className="text-[10px] uppercase text-white">© {currentYear} • @ivantanakaa</p>
+          <p className="text-xs font-mono text-white">
+            IVAN TANAKA - Software Engineer
+          </p>
+          <p className="text-[10px] uppercase text-white">
+            © {currentYear} • @ivantanakaa
+          </p>
         </div>
       </footer>
     </div>

@@ -3,7 +3,15 @@
   img {
     @apply inline-block;
   }
+  
+  /* Optimization: Tells the browser the site is dark-themed 
+     to prevent a white flash during initial load */
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
 }
+
 @tailwind components;
 @tailwind utilities;
 
@@ -11,33 +19,30 @@
   --foreground: #020617;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #020617;
-  }
-}
-
-/* app/globals.css */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--foreground);
-}
-
+/* Optimization: Use 'transform-gpu' for anything that moves.
+   This class ensures the GPU handles the lift effect on your cards.
+*/
 @layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
+  .transform-gpu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
-.items-center {
-  align-items: center;
+/* Optimization: Content Visibility 
+   Adding this to sections below the fold (like Education or Portfolio) 
+   tells the browser to skip rendering them until the user scrolls near.
+*/
+.optimize-render {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
 }
