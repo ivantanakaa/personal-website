@@ -38,7 +38,7 @@ export default function ResumePage() {
               Impactful Solutions.<br />
               </span>
             </h1>
-            <div className="space-y-6 text-lg text-slate-400 leading-relaxed print:text-slate-800 print:text-sm">
+            <div className="space-y-6 text-lg text-slate-400 leading-relaxed print:text-slate-800 print:text-sm description-container">
               {about.description.map((desc, i) => (
                 <p
                   key={i}

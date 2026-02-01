@@ -11,6 +11,16 @@
     scroll-behavior: smooth;
   }
 }
+/* target strong tags inside your description container */
+.description-container strong {
+  transition: all 2s ease;
+  cursor: default;
+}
+
+.description-container strong:hover {
+  color: #f59e0b; /* amber-500 */
+  border-radius: 4px;
+}
 
 @tailwind components;
 @tailwind utilities;
