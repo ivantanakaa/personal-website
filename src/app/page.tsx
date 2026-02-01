@@ -146,7 +146,7 @@ export default function ResumePage() {
                       key={jIdx}
                       className="text-slate-400 text-sm leading-relaxed flex gap-3 print:text-slate-700"
                     >
-                      <span className="text-slate-700 group-hover:text-amber-600 mt-1.5 font-bold">
+                      <span className="text-slate-700 group-hover:text-amber-600 font-bold">
                         •
                       </span>
                       <span dangerouslySetInnerHTML={{ __html: job }} />
