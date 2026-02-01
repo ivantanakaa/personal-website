@@ -15,6 +15,12 @@
     "MySQL",
     "PostgreSQL"
   ],
+  "DevOps & Infrastructure": [
+    "Docker",
+    "Nginx",
+    "CI/CD",
+    "Goose"
+  ],
   "Tools & Workflow": [
     "Git",
     "NPM",
