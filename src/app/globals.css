@@ -8,13 +8,18 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #ecf0f1;
+  --foreground: #020617;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #ecf0f1;
+    --foreground: #020617;
   }
+}
+
+/* app/globals.css */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
