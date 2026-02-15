@@ -7,9 +7,13 @@
     "start_date": "2024/10",
     "end_date": null,
     "jobs": [
-      "Currently scaling the e-commerce stack for Indonesia's top jewelry brands (Frank & co., Mondial, The Palace) using <strong>Next.js and Go</strong>.",
+      "Currently scaling the e-commerce stack for Indonesia’s top jewelry brands (Frank & co., Mondial, The Palace) using <strong>Next.js and Go</strong>.",
       "Shipped a core <strong>Design System as an NPM package</strong>, cutting down dev time across the team by ensuring we don't rebuild the same UI for every new project.",
-      "Delivered a custom engraving system for the <i>Frank & Co. x Maudy Ayunda</i> launch under a <strong>tight, high-pressure deadline</strong>."
+      "Delivered a custom engraving system for the <i>Frank & Co. x Maudy Ayunda</i> launch under a <strong>tight, high-pressure deadline</strong>.",
+      "Built an internal <strong>multi-brand management system</strong> to consolidate inventory and operations across the company’s luxury portfolio.",
+      "Boosted site performance and SEO by cleaning up sitemaps and implementing <strong>Server-Side Tagging</strong> for cleaner marketing data.",
+      "Improved deployment reliability by setting up <strong>Dockerized CI/CD pipelines</strong> and automated migrations with <strong>Goose</strong>.",
+      "Hardened platform security using <strong>HTTP-only cookies</strong> to protect sensitive customer data from client-side attacks."
     ]
   },
   {
@@ -21,7 +25,9 @@
     "end_date": "2024/10",
     "jobs": [
       "Developed a <strong>Mutual Fund investment platform</strong>, balancing high-performance frontend needs with strict <strong>OJK and SNAP BI fintech regulations</strong>.",
-      "Refactored the legacy codebase to <strong>Next.js</strong> to solve performance bottlenecks and improve maintainability."
+      "Refactored the legacy codebase to <strong>Next.js</strong> to solve performance bottlenecks and improve maintainability.",
+      "Bridged the gap between vendors and internal stakeholders to make sure technical specs actually matched business goals.",
+      "Built a custom <strong>email engine with Google Script</strong> to automate customer notifications and handled the move to <strong>Atlassian/Notion</strong> for better team documentation."
     ]
   },
   {
@@ -33,7 +39,9 @@
     "end_date": "2023/10",
     "jobs": [
       "Developed <strong>Bibit Institution</strong>, a dedicated portal for corporate clients to manage large-scale mutual fund investments.",
-      "Built a custom <strong>product filtering engine</strong> to help users navigate investment options more intuitively."
+      "Built a custom <strong>product filtering engine</strong> to help users navigate investment options more intuitively.",
+      "Automated tax compliance by integrating <strong>digital stamp duty</strong>, removing a major manual headache for the operations team.",
+      "Kept the system stable for millions of users through data-driven performance tuning and consistent bug fixes."
     ]
   },
   {
@@ -45,7 +53,8 @@
     "end_date": "2022/03",
     "jobs": [
       "Maintained the core <strong>cross-border remittance app</strong>, ensuring international money transfers were fast and user-friendly.",
-      "Built <strong>Topremit for Business</strong> to help the company scale into the corporate market."
+      "Built <strong>Topremit for Business</strong>, the company’s first platform specifically designed for corporate remittance needs.",
+      "Handled the move to <strong>OTP-based authentication</strong> to improve account security during onboarding."
     ]
   },
   {
@@ -57,14 +66,15 @@
     "end_date": "2020/01",
     "jobs": [
       "Used <strong>Flutter</strong> to build e-learning apps that work smoothly even on lower-end mobile devices.",
-      "Set up the <strong>MVVM architecture with Provider</strong> to make state management more predictable."
+      "Set up the <strong>MVVM architecture with Provider</strong> to make state management more predictable.",
+      "Built the <strong>Arabic e-learning module</strong> from scratch and worked in a high-velocity <strong>Scrumban</strong> environment."
     ]
   },
   {
     "corporate": "Royal Brewhouse Group",
     "logo": "/assets/images/careers/royal_brewhouse_logo.png",
     "position": "Backend Developer",
-    "corporate_link": "https://royalbrewhouseindonesia.com/",
+    "corporate_link": "https://royalbrewhouserb.com/en-US/Home.aspx",
     "start_date": "2018/08",
     "end_date": "2019/04",
     "jobs": [
