@@ -6,6 +6,7 @@ import { Briefcase } from 'lucide-react';
 interface ExperienceCardProps {
   experience: {
     corporate: string;
+    logo?: string;
     position: string;
     corporate_link: string;
     start_date: string;
@@ -35,7 +36,18 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
         <Card hover={true}>
           <div className="flex items-start gap-3 sm:gap-4">
             <div className="p-2 sm:p-3 bg-accent-primary/10 rounded-lg flex-shrink-0 print:bg-amber-100">
-              <Briefcase className="w-4 h-4 sm:w-6 sm:h-6 text-accent-primary print:text-amber-700" />
+              {experience.logo ? (
+                <img 
+                  src={experience.logo} 
+                  alt={`${experience.corporate} logo`}
+                  className="w-4 h-4 sm:w-6 sm:h-6 object-contain brightness-0 invert opacity-80 print:brightness-100 print:invert-0 print:opacity-100"
+                  style={{
+                    filter: 'brightness(0) saturate(100%) invert(77%) sepia(48%) saturate(1000%) hue-rotate(359deg) brightness(102%) contrast(101%)'
+                  }}
+                />
+              ) : (
+                <Briefcase className="w-4 h-4 sm:w-6 sm:h-6 text-accent-primary print:text-amber-700" />
+              )}
             </div>
             
             <div className="flex-1 min-w-0">

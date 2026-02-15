@@ -150,7 +150,7 @@ export default function ResumePage() {
         </section>
 
         {/* CERTIFICATIONS */}
-        <section className="py-24 border-t border-slate-900 bg-slate-950 print:bg-white print:py-8 print:break-before-page print:border-0">
+        <section className="py-24 border-t border-slate-900 bg-slate-950 print:hidden">
           <div className="max-w-6xl mx-auto px-6">
             <h2 className="text-sm font-black text-amber-500/80 uppercase tracking-[0.3em] mb-12 print:mb-4">
               Verified Certifications
