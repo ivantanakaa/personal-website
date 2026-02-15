@@ -1,6 +1,5 @@
 import {
   Award,
-  Code2,
   GraduationCap,
   Github,
   Phone,
@@ -9,7 +8,6 @@ import {
 
 // Data Imports
 import careers from "@/data/careers.json";
-import skills from "@/data/skills.json";
 import portfolios from "@/data/portfolios.json";
 import about from "@/data/about.json";
 import certificates from "@/data/certificates.json";
@@ -18,16 +16,38 @@ import honors from "@/data/honors.json";
 import contacts from "@/data/contacts.json";
 import PrintWrapper from "./components/PrintWrapper";
 
+// New Futuristic Components
+import { Header } from "./components/Navigation/Header";
+import { ScrollProgress } from "./components/Navigation/ScrollProgress";
+import { BackToTop } from "./components/Navigation/BackToTop";
+import { HeroSection } from "./components/Hero/HeroSection";
+import { BackgroundEffects } from "./components/Hero/BackgroundEffects";
+import { SkillsGrid } from "./components/Skills/SkillsGrid";
+import { PortfolioGallery } from "./components/Portfolio/PortfolioGallery";
+import { Timeline } from "./components/Experience/Timeline";
+import { ContactSection } from "./components/Contact/ContactSection";
+
 export default function ResumePage() {
   const currentYear = new Date().getFullYear();
   const yearsExp = currentYear - about.years_of_experience_start;
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-300 font-sans selection:bg-amber-500/30 scroll-smooth">
+      {/* Navigation */}
+      <Header />
+      <ScrollProgress />
+      <BackToTop />
+      
       {/* PRINTABLE CONTENT START */}
       <PrintWrapper>
-        {/* HERO SECTION */}
-        <section className="max-w-6xl mx-auto px-6 pt-32 pb-20 relative print:pt-0">
+        {/* HERO SECTION - New Futuristic Version */}
+        <div className="relative print:hidden">
+          <BackgroundEffects />
+          <HeroSection />
+        </div>
+
+        {/* HERO SECTION - Print Version (Legacy) */}
+        <section className="max-w-6xl mx-auto px-6 pt-32 pb-20 relative hidden print:block print:pt-0">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-900/10 blur-[120px] -z-10 rounded-full print:hidden" />
           <div className="max-w-3xl">
             <h1 className="text-6xl font-extrabold tracking-tight mb-8 leading-tight text-white print:text-black print:text-4xl">
@@ -69,157 +89,23 @@ export default function ResumePage() {
           </div>
         </section>
 
-        {/* SKILLS GRID */}
-        <section className="bg-slate-900/30 py-24 border-y border-slate-900 print:bg-white print:py-8 print:border-slate-200">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex items-center gap-2 mb-12 text-amber-500/80 print:mb-4">
-              <Code2 size={24} className="print:text-amber-600" />
-              <h2 className="text-sm font-black text-white uppercase tracking-[0.3em] print:text-black">
-                Technical Toolkit
-              </h2>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 print:grid-cols-2 print:gap-4">
-              {Object.entries(skills).map(([category, items]) => (
-                <div
-                  key={category}
-                  className="bg-slate-900/50 p-8 rounded-2xl border border-slate-800 print:border-slate-200 print:bg-slate-50 print:p-4"
-                >
-                  <h3 className="font-bold text-slate-100 mb-6 flex items-center gap-2 print:text-black print:mb-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500 print:bg-amber-600" />
-                    {category}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {items.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-3 py-1 bg-slate-950 text-slate-400 rounded-md text-xs font-medium border border-slate-800 print:bg-white print:text-black print:border-slate-300"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* SKILLS GRID - New Futuristic Version (also for print) */}
+        <section id="skills" className="py-24 print:py-8 print:break-before-page">
+          <SkillsGrid />
         </section>
 
-        {/* WORK EXPERIENCE */}
-        <section className="max-w-6xl mx-auto px-6 py-24 print:py-10">
-          <h2 className="text-sm font-black text-amber-500/80 uppercase tracking-[0.3em] mb-16 print:mb-6 accent-text">
-            Work Experience
-          </h2>
-          <div className="space-y-16 print:space-y-8">
-            {careers.map((exp, idx) => (
-              <div
-                key={idx}
-                className="group relative pl-12 print:pl-0 break-inside-avoid"
-              >
-                <div className="absolute left-0 top-2 w-[1px] h-full bg-slate-800 group-hover:bg-amber-500 transition-colors duration-500 print:hidden" />
-                <div className="absolute left-[-5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-950 border border-slate-700 group-hover:border-amber-400 group-hover:bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0)] group-hover:shadow-[0_0_15px_rgba(245,158,11,0.6)] print:hidden transition-all duration-300" />
-
-                <div className="flex flex-wrap justify-between items-baseline mb-4 gap-4">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors duration-300 print:text-black print:text-lg">
-                    {exp.position}
-                  </h3>
-                  <span className="font-mono text-xs text-slate-500 tracking-widest transition-colors duration-300 group-hover:text-slate-200 origin-right print:text-slate-500">
-                    {exp.start_date} — {exp.end_date || "PRESENT"}
-                  </span>
-                </div>
-
-                <a
-                  href={exp.corporate_link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-amber-600 font-bold mb-4 hover:text-amber-400 transition-colors duration-300 print:text-amber-700"
-                >
-                  @{exp.corporate}
-                  <ExternalLink
-                    size={14}
-                    className="opacity-50 group-hover:opacity-100"
-                  />
-                </a>
-
-                <ul className="grid gap-3">
-                  {exp.jobs.map((job, jIdx) => (
-                    <li
-                      key={jIdx}
-                      className="text-slate-400 text-sm leading-relaxed flex gap-3 print:text-slate-700"
-                    >
-                      <span className="text-slate-700 group-hover:text-amber-600 font-bold">
-                        •
-                      </span>
-                      <span dangerouslySetInnerHTML={{ __html: job }} />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+        {/* WORK EXPERIENCE - New Futuristic Version (also for print) */}
+        <section id="experience" className="py-24 print:py-10 print:break-before-page">
+          <Timeline />
         </section>
 
-        {/* PORTFOLIO SECTION - FIXED onClick Error */}
-        <section className="bg-black py-24 print:hidden" id="portfolios">
-          <div className="max-w-6xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-white mb-16 text-center">
-              Selected Works
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {portfolios.map((project, idx) => {
-                const projectUrl =
-                  typeof project.link === "object"
-                    ? project.link.url
-                    : project.link;
-                const hasLink = !!projectUrl;
-
-                return (
-                  <a
-                    key={idx}
-                    href={hasLink ? projectUrl : undefined}
-                    target={hasLink ? "_blank" : undefined}
-                    rel="noopener noreferrer"
-                    className={`group relative bg-slate-900/20 border border-slate-800/50 rounded-xl p-1 transition-all duration-500 block
-                      ${
-                        hasLink
-                          ? "hover:border-amber-500/30 hover:-translate-y-2 cursor-pointer"
-                          : "cursor-default opacity-80 pointer-events-none"
-                      }`}
-                  >
-                    <div className="bg-slate-950 p-6 rounded-lg h-full flex flex-col relative overflow-hidden">
-                      {hasLink && (
-                        <div className="absolute top-4 right-4 text-amber-500 opacity-0 group-hover:opacity-100 transition-all transform translate-x-2 group-hover:translate-x-0">
-                          <ExternalLink size={16} />
-                        </div>
-                      )}
-                      <h3 className="text-lg font-bold text-white mb-3 group-hover:text-amber-400">
-                        {project.name}
-                      </h3>
-                      <p
-                        className="text-slate-500 text-xs mb-6 line-clamp-3 leading-relaxed group-hover:text-slate-300"
-                        dangerouslySetInnerHTML={{
-                          __html: project.description,
-                        }}
-                      />
-                      <div className="flex flex-wrap gap-2 mt-auto">
-                        {project.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="text-[9px] font-bold text-slate-400 border border-slate-800 px-2 py-0.5 rounded uppercase group-hover:text-amber-500/80"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          </div>
+        {/* PORTFOLIO SECTION - New Futuristic Version */}
+        <section id="portfolio" className="py-24 print:hidden">
+          <PortfolioGallery />
         </section>
 
         {/* EDUCATION & HONORS */}
-        <section className="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 print:py-8 print:grid-cols-1">
+        <section className="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 print:py-8 print:grid-cols-1 print:break-before-page">
           <div className="break-inside-avoid">
             <div className="flex items-center gap-2 mb-8 text-amber-500/80">
               <GraduationCap size={24} />
@@ -269,7 +155,7 @@ export default function ResumePage() {
         </section>
 
         {/* CERTIFICATIONS */}
-        <section className="py-24 border-t border-slate-900 bg-slate-950 print:bg-white print:py-8">
+        <section className="py-24 border-t border-slate-900 bg-slate-950 print:bg-white print:py-8 print:break-before-page print:border-0">
           <div className="max-w-6xl mx-auto px-6">
             <h2 className="text-sm font-black text-amber-500/80 uppercase tracking-[0.3em] mb-12 print:mb-4">
               Verified Certifications
@@ -304,30 +190,9 @@ export default function ResumePage() {
           </div>
         </section>
 
-        {/* CONTACT */}
-        <section
-          id="contact"
-          className="py-32 px-6 bg-slate-950 border-t border-slate-900 print:hidden"
-        >
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Interested in working together?
-            </h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              {contacts.map((contact, idx) => (
-                <a
-                  key={idx}
-                  href={contact.link}
-                  target="_blank"
-                  className="flex items-center gap-3 px-6 py-3 bg-slate-900 border border-slate-800 rounded-full text-sm font-bold text-slate-300 hover:bg-amber-600 hover:text-white duration-300"
-                >
-                  {contact.alt === "whatsapp" && <Phone size={18} />}
-                  {contact.alt === "github" && <Github size={18} />}
-                  {contact.label}
-                </a>
-              ))}
-            </div>
-          </div>
+        {/* CONTACT - New Futuristic Version */}
+        <section id="contact" className="py-32 print:hidden">
+          <ContactSection />
         </section>
       </PrintWrapper>
 

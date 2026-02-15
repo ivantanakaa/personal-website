@@ -20,13 +20,14 @@ export default function PrintButton({ contentRef }: { contentRef: React.RefObjec
   });
 
   return (
-    <div className="fixed bottom-8 right-8 z-50 print:hidden">
+    <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 print:hidden">
       <button
         onClick={() => handlePrint()}
-        className="flex items-center gap-2 px-6 py-3 bg-amber-600 hover:bg-amber-500 text-white font-bold rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 border border-amber-400/50"
+        className="group flex items-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white font-bold rounded-full shadow-[0_0_30px_rgba(245,158,11,0.4)] hover:shadow-[0_0_40px_rgba(245,158,11,0.6)] transition-all duration-300 hover:scale-105 active:scale-95 border border-amber-400/30"
+        aria-label="Download CV as PDF"
       >
-        <Download size={20} />
-        Download CV
+        <Download size={18} className="sm:w-5 sm:h-5 group-hover:animate-bounce" />
+        <span className="text-sm sm:text-base">Download CV</span>
       </button>
     </div>
   );
