@@ -3,10 +3,32 @@
 import { useState } from 'react';
 import { FadeIn } from '../animations/FadeIn';
 import { ProjectCard } from './ProjectCard';
+import { PortfolioModal } from './PortfolioModal';
 import portfoliosData from '@/data/portfolios.json';
+
+// Project type based on portfolios.json structure
+type Project = {
+  name: string;
+  alt: string;
+  link?: string | { url: string; text: string };
+  src: string;
+  description: string;
+  tags: string[];
+};
 
 export function PortfolioGallery() {
   const [filter, setFilter] = useState<string>('All');
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  // Handler to open modal with selected project
+  const handleCardClick = (project: Project) => {
+    setSelectedProject(project);
+  };
+
+  // Handler to close modal
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
 
   // Get unique tags
   const allTags = Array.from(
@@ -56,7 +78,7 @@ export function PortfolioGallery() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredProjects.map((project, index) => (
             <FadeIn key={project.name} delay={0.1 * (index % 6)}>
-              <ProjectCard project={project} />
+              <ProjectCard project={project} onCardClick={handleCardClick} />
             </FadeIn>
           ))}
         </div>
@@ -66,6 +88,13 @@ export function PortfolioGallery() {
             No projects found with the selected filter.
           </p>
         )}
+
+        {/* Portfolio Modal */}
+        <PortfolioModal
+          project={selectedProject}
+          isOpen={!!selectedProject}
+          onClose={handleCloseModal}
+        />
       </div>
     </section>
   );

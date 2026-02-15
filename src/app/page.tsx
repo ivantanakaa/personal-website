@@ -1,19 +1,14 @@
 import {
   Award,
   GraduationCap,
-  Github,
-  Phone,
   ExternalLink,
 } from "lucide-react";
 
 // Data Imports
-import careers from "@/data/careers.json";
-import portfolios from "@/data/portfolios.json";
 import about from "@/data/about.json";
 import certificates from "@/data/certificates.json";
 import educations from "@/data/educations.json";
 import honors from "@/data/honors.json";
-import contacts from "@/data/contacts.json";
 import PrintWrapper from "./components/PrintWrapper";
 
 // New Futuristic Components

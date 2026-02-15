@@ -1,42 +1,53 @@
 [
   {
+    "name": "Frank & Co. – Engraved Moments",
+    "alt": "frank and co engraved moments",
+    "link": {
+      "url": "https://youtube.com/shorts/9chGcONcmI8?si=mWXldw2mx8QXszBG",
+      "text": "Watch Demo"
+    },
+    "src": "/assets/images/portfolios/frank_and_co_engraved_moments.jpeg",
+    "description": "An interactive personalization platform built for the <i>Frank & Co. x Maudy Ayunda</i> collaboration. I delivered the system under a <strong>tight deadline</strong> to support live, on-site engraving for customers during the launch event.",
+    "tags": ["Next.js", "Typescript", "Tailwind.js"]
+  },
+  {
     "name": "Tasks Trackerry",
     "alt": "tasks trackerry",
     "link": {
       "url": "https://tasks-trackerry.vercel.app/",
-      "text": "tasks-trackerry.vercel.app"
+      "text": "Open App"
     },
     "src": "/assets/images/portfolios/tasks_trackerry.png",
-    "description": "Task Trackerry is a <strong>simple to-do-list project</strong> I create for myself. It&apos;s a simple to-do-list which you could input the task priority. The data is currently being stored in local storage in browser. It&apos;s develop using <strong>Next.js and Tailwind.</strong>",
-    "tags": ["React.js", "Typescript", "Next.js", "Tailwind.js"]
+    "description": "A personal productivity tool I built to scratch my own itch. It features a custom <strong>priority-weighting system</strong> and saves everything to local storage, so it's fast, private, and works offline.",
+    "tags": ["Next.js", "Typescript", "Tailwind.js"]
   },
   {
     "name": "Ayovest",
     "alt": "ayovest",
     "link": {
       "url": "https://www.ayovest.id/",
-      "text": "ayovest.id"
+      "text": "Ayovest.id"
     },
     "src": "/assets/images/portfolios/ayovest.png",
-    "description": "I developed a mutual fund investment application and web platform using <strong>Next.js and Vue.js</strong>. In my role, I coordinated with vendors and stakeholders as the IT representative. Additionally, I refactored legacy code using <strong>Next.js</strong> to improve performance and maintainability.",
-    "tags": ["React.js", "Typescript", "Next.js", "Tailwind.js", "Vue.js"]
+    "description": "Led the frontend development for this mutual fund platform using <strong>Next.js and Vue.js</strong>. I refactored legacy code to boost performance and acted as the technical bridge between vendors and business stakeholders.",
+    "tags": ["Next.js", "Typescript", "Tailwind.js", "Vue.js"]
   },
   {
     "name": "Thomas Edison",
     "alt": "thomas edison",
     "src": "/assets/images/portfolios/thomas_edison.png",
-    "description": "Thomas Edison is an <strong>electrical supply store.</strong> The owner needed a system to track their supply and sales. As a Software Engineer, I interviewed the store owner to identify their needs and developed custom solutions. I <strong>designed and implemented a website</strong> featuring <strong>procurement, sales, quantity management, and returns functionalities</strong>. This project was developed using <strong>Laravel and Next.js</strong>.",
-    "tags": ["Laravel", "React.js", "Typescript", "Next.js"]
+    "description": "Built a custom <strong>ERP system</strong> for an electrical supply store. I interviewed the owner to map out their business needs and developed modules for procurement, sales tracking, and inventory returns from scratch.",
+    "tags": ["Laravel", "Next.js", "Typescript"]
   },
   {
     "name": "Bibit",
     "alt": "bibit",
     "link": {
-      "url": "https://www.bibit.id/",
-      "text": "bibit.id"
+      "url": "https://bibit.id/",
+      "text": "Bibit.id"
     },
     "src": "/assets/images/portfolios/bibit.png",
-    "description": "Bibit is an <strong>investment company</strong> based in Indonesia. As a remote company, I am challenged to strengthen my communication as most of our teams collaborated from different location. I am in charge with several projects, the most significant might be <strong>Bibit Institution.</strong> It&apos;s an <strong>mutual fund investment targeted for a corporate.</strong>",
+    "description": "Contributed to Indonesia's leading investment app. My main focus was <strong>Bibit Institution</strong>, building the portal that allows corporate clients to manage institutional mutual fund portfolios.",
     "tags": ["React.js", "Typescript", "Next.js"]
   },
   {
@@ -44,10 +55,10 @@
     "alt": "topremit",
     "link": {
       "url": "https://topremit.com/en",
-      "text": "topremit.com"
+      "text": "Topremit.com"
     },
     "src": "/assets/images/portfolios/topremit.png",
-    "description": "Topremit is a <strong>remittance startup company</strong> based in Medan. In case you are unfamiliar with the word, Remittance means sending money abroad. In this company I got the chance to utilized <strong>React.js and Next.js</strong>. I also got the chance to contributed building the business sections and experiencing creating Authorization and Authentication with the teams.",
+    "description": "Worked on the core remittance platform using <strong>React and Next.js</strong>. I was responsible for building out the business-facing features and hardening the authentication flows for international transfers.",
     "tags": ["React.js", "Next.js"]
   },
   {
@@ -55,21 +66,21 @@
     "alt": "artech",
     "link": {
       "url": "http://bit.ly/ArtechApps",
-      "text": "Artech Playstore"
+      "text": "Playstore"
     },
     "src": "/assets/images/portfolios/artech.png",
-    "description": "Artech is an <strong>electronics selling company.</strong> I was asked to create a membership points application using <strong>React Native</strong> as the frameworks. We used <strong>Firebase notification</strong> for the notification and <strong>JWT-token for the Authentication</strong>. In this project I got the chance to create the mockup apps prototype using <strong>Figma.</strong>",
-    "tags": ["React Native", "Figma"]
+    "description": "Developed a membership and loyalty app using <strong>React Native</strong>. Handled the full flow from <strong>Figma prototyping</strong> to implementing real-time Firebase notifications and JWT security.",
+    "tags": ["React Native"]
   },
   {
     "name": "Membee",
     "alt": "membee",
     "link": {
       "url": "http://bit.ly/MembeeApps",
-      "text": "Membee Video"
+      "text": "Watch Demo"
     },
     "src": "/assets/images/portfolios/membee.png",
-    "description": "Membee is a <strong>food ordering system</strong> I created for my final project. It let user to order food and reserve a table from their phone. I used <strong>Laravel</strong> for the backend and <strong>Flutter</strong> for the mobile apps. I got the chance to experience Xendit (A Payment Gateway) for the payment method.",
+    "description": "A food-ordering and table reservation ecosystem. I built the backend in <strong>Laravel</strong> and the mobile app in <strong>Flutter</strong>, integrating <strong>Xendit</strong> to handle seamless digital payments.",
     "tags": ["Flutter", "Laravel"]
   },
   {
@@ -77,10 +88,10 @@
     "alt": "aminin",
     "link": {
       "url": "http://bit.ly/AmininApps",
-      "text": "Aminin Playstore"
+      "text": "Playstore"
     },
     "src": "/assets/images/portfolios/aminin.png",
-    "description": "Aminin is the second project I contributed in Bahaso. It's an apps about <strong>Arabic e-learning.</strong> I got the chance to learn about <strong>Deeplink, Geolocator, and experience more of Flutter framework</strong>. Not to mention I learnt a lot about Arabic languages and cultures in the process which made this experience more exciting!",
+    "description": "An Arabic e-learning app built with <strong>Flutter</strong>. I implemented technical features like <strong>deep linking and geolocation</strong> to improve the user experience and app discoverability.",
     "tags": ["Flutter"]
   },
   {
@@ -88,10 +99,10 @@
     "alt": "bahaso",
     "link": {
       "url": "https://bahaso.com/",
-      "text": "Bahaso Playstore"
+      "text": "Playstore"
     },
     "src": "/assets/images/portfolios/bahaso.png",
-    "description": "Bahaso is an <strong>e-learning startup</strong> company based in Jakarta. I was asked to continue their projects while using <strong>Flutter</strong> framework. It's a really exciting experience, as they let me to build a Flutter module from the start, finding a better <strong>state management</strong> for the project, we choose Provider after some research.",
+    "description": "Refined the mobile experience for this EdTech startup. I built several core modules from scratch and moved the app to <strong>Provider</strong> for a more reliable state management architecture.",
     "tags": ["Flutter"]
   }
 ]

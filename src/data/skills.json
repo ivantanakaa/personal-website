@@ -1,47 +1,122 @@
 [
   {
-    "section": "Frontend Development",
+    "section": "Frontend Architecture",
     "skills": [
-      { "skill": "Next.js", "highlight": true },
-      { "skill": "TypeScript", "highlight": true },
-      { "skill": "React", "highlight": false },
-      { "skill": "Vue.js", "highlight": false },
-      { "skill": "Tailwind CSS", "highlight": false },
-      { "skill": "React Query", "highlight": false },
-      { "skill": "Flutter", "highlight": false },
-      { "skill": "React Native", "highlight": false }
+      {
+        "skill": "Next.js",
+        "highlight": true
+      },
+      {
+        "skill": "TypeScript",
+        "highlight": true
+      },
+      {
+        "skill": "React",
+        "highlight": true
+      },
+      {
+        "skill": "Vue.js",
+        "highlight": false
+      },
+      {
+        "skill": "Tailwind CSS",
+        "highlight": false
+      },
+      {
+        "skill": "React Query",
+        "highlight": false
+      },
+      {
+        "skill": "Flutter",
+        "highlight": true
+      },
+      {
+        "skill": "React Native",
+        "highlight": false
+      }
     ]
   },
   {
-    "section": "Backend Development",
+    "section": "Backend & Systems",
     "skills": [
-      { "skill": "Python", "highlight": true },
-      { "skill": "Go", "highlight": true },
-      { "skill": "PostgreSQL", "highlight": true },
-      { "skill": "Laravel", "highlight": false },
-      { "skill": "MySQL", "highlight": false }
+      {
+        "skill": "Go",
+        "highlight": true
+      },
+      {
+        "skill": "Python",
+        "highlight": true
+      },
+      {
+        "skill": "PostgreSQL",
+        "highlight": true
+      },
+      {
+        "skill": "Laravel",
+        "highlight": false
+      },
+      {
+        "skill": "MySQL",
+        "highlight": false
+      },
+      {
+        "skill": "RESTful APIs",
+        "highlight": false
+      }
     ]
   },
   {
-    "section": "DevOps & Infrastructure",
+    "section": "DevOps & Data Reliability",
     "skills": [
-      { "skill": "Apache Airflow", "highlight": true },
-      { "skill": "Docker", "highlight": false },
-      { "skill": "Nginx", "highlight": false },
-      { "skill": "CI/CD", "highlight": false },
-      { "skill": "Goose", "highlight": false }
+      {
+        "skill": "Apache Airflow",
+        "highlight": true
+      },
+      {
+        "skill": "Docker",
+        "highlight": true
+      },
+      {
+        "skill": "CI/CD (GitHub Actions)",
+        "highlight": false
+      },
+      {
+        "skill": "Google Tag Manager",
+        "highlight": false
+      },
+      {
+        "skill": "Server-Side Tagging (Gateway)",
+        "highlight": false
+      },
+      {
+        "skill": "Goose (Migrations)",
+        "highlight": false
+      }
     ]
   },
   {
-    "section": "Tools & Workflow",
+    "section": "Product & Design",
     "skills": [
-      { "skill": "Git", "highlight": false },
-      { "skill": "NPM", "highlight": false },
-      { "skill": "Figma", "highlight": false },
-      { "skill": "Google Analytics", "highlight": false },
-      { "skill": "Notion", "highlight": false },
-      { "skill": "Atlassian", "highlight": false },
-      { "skill": "Monday", "highlight": false }
+      {
+        "skill": "Figma",
+        "highlight": false
+      },
+      {
+        "skill": "System Design",
+        "highlight": false
+      },
+      {
+        "skill": "Google Analytics",
+        "highlight": true
+      },
+      {
+        "skill": "Agile (Scrum/Kanban)",
+        "highlight": false
+      },
+      {
+        "skill": "Atlassian / Notion",
+        "highlight": false
+      }
     ]
   }
 ]
